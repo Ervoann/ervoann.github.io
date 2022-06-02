@@ -463,12 +463,6 @@ body {
 
 
 @media (max-width: 1000px) {
-  body {
-    margin: 0;
-    width: 100vw;
-    height: 50vh;
-    overflow: hidden;
-  }
 
   .marquee p, .marquee2 p {
     display: inline-block;
