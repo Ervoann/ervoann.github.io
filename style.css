@@ -42,6 +42,7 @@ body {
 
 
 
+
 /*PremièrePage*/
 
 .FirstPage {
@@ -530,6 +531,14 @@ body {
    0%   { opacity:1; }
    40%   {opacity:0; }
    100% { opacity:1; }
+  }
+
+  .SlidersTitles {
+    font-family: UncutReg;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    padding: 10px;
   }
   
 }
