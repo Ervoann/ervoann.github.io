@@ -470,4 +470,11 @@ body {
     overflow: hidden;
   }
 
+  .marquee p, .marquee2 p {
+    display: inline-block;
+    font-family: Ginger;
+    color: white;
+    font-size: 10rem;
+  }
+
 }
