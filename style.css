@@ -560,6 +560,35 @@ body {
     color: white;
     padding: 10px;
   }
+
+  .popover .close::after {
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #fff;
+    content: "×";
+    cursor: pointer;
+    opacity: 0; 
+    animation: 1s fadeIn ease forwards .5s;
+  }
+
+  .Arrowtext2 img {
+  width: 50px;
+  height: 50px;
+}
+
+.Arrowtext img {
+  width: 50px;
+  height: 50px;
+}
   
 }
 
@@ -571,6 +600,36 @@ body {
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: .30s ease-in-out;
+}
+
+.Arrowtext2 {
+	position: fixed;
+  display: flex;
+  flex-direction: row;
+	z-index: 99;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+.Arrowtext2 button {
+  border: 0;
+  background-color: #000000;
+}
+
+.Arrowtext2 img {
+  width: 20px;
+  height: 20px;
+}
+
+.Linkedin {
+  margin-left: 10px;
 }
 
 /* Menu*/
@@ -691,7 +750,7 @@ body {
   position: absolute;
   display: flex;
   z-index: 1;
-  font-size: 30px;
+  font-size: 50px;
   align-items: center;
   justify-content: center;
   background-color: #000000;
