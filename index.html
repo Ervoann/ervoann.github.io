@@ -6,16 +6,59 @@
       <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
       <script rel="stylesheet" src="code.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
 </head>
 
 <body>
+     <div id="circle" class="circle"></div>
+<div id="circle2" class="circle2"></div>
+
+     <div class="container">
+          <div class="Arrowtext"><h1>
+               <a class="open" href="#menu"><button class="btn"><img src="/Menu.png"></button></a>
+            </h1>
+          </div>
+          
+             
+         <div class="popover" id="menu">
+          <div class = 'content'>
+           <a href="#" class="close"></a>
+            <div class = 'nav'>
+             <ul class = 'nav_list'>
+               
+               <div class = 'nav_list_item'>
+                <li><a href="#Accueil">Accueil</a></li>
+               </div>
+              <div class = 'nav_list_item'>
+                   <li><a href="#SecondPage">A propos de moi</a></li>
+               </div>
+             <div class = 'nav_list_item'>
+                <li><a href="#ThirdPage">Compétences</a></li>
+               </div>
+             <div class = 'nav_list_item'>
+                <li><a href="/CSSMarqueeMenu/Projets.html">Projets</a></li>
+               </div>
+              <div class = 'nav_list_item'>
+                   <li><a href="#">Contact</a></li>
+               </div>
+               
+              </ul>
+           </div>
+          </div>
+          </div>
+          </div>
+
+
      
 
      <!--First Page-->
+    
      <div class="Container">
+          
+
          
-     <section class="FirstPage">
+     <section id="Accueil"class="FirstPage">
 
           <p class="Sentence1 noselect">BIENVENUE DANS LE MONDE DE <br> <span class="NameSurname">GEORGES ERVOANN</span></p>
 
@@ -84,7 +127,7 @@
                     </div>
 
                <div class="ArrowSliders">
-               <a href="#ProjectBox">
+               <a href="/CSSMarqueeMenu/Projets.html">
                <svg id="Arrow" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-arrow-down" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
                </svg>
@@ -94,31 +137,7 @@
 
 </section>
 
-<section class="FourthPage" id="FourthPage">
-     <div class="laboite">
-     <div class="WhoAmIBox">
-          <p class="WhoAmI"><span class="word1">Bonjour,</span> <span class="Blur">je</span> <span class="Blur">suis</span> <span class="Blur">un</span> <span class="WhoAmIBold Blur">designer graphique</span> <span class="Blur">pluridiciplinaire</span> 
-               <span class="Blur">indépendant</span> <span class="Blur">de</span> <span class="Blur">19</span> <span class="Blur">ans</span> <span class="Blur">basé</span> <span class="Blur">à</span> <span class="Blur">Saint-Étienne.</span><br><br><span class="Blur">Actuellement</span>
-                <span class="Blur">en</span> <span class="Blur">stage</span> <span class="Blur">chez</span> <span class="WhoAmIBold Blur">Optimiz Network</span><span class="Blur">.</span> <span class="Blur">Mon</span> <span class="Blur">objectif</span> 
-                <span class="Blur">est</span> <span class="Blur">de</span> <span class="Blur">proposer</span> <span class="Blur">des</span> <span class="Blur">produits</span> <span class="Blur">de</span> <span class="Blur">qualités</span><span class="Blur">.</span>
-                 <span class="Blur">Pour</span> <span class="Blur">cela</span> <span class="Blur">je</span> <span class="Blur">place</span> <span class="Blur">mes</span> <span class="Blur">clients</span> <span class="Blur">au</span>
-                <span class="Blur">coeur</span> <span class="Blur">du</span> <span class="WhoAmIBold Blur">processus créatif</span> <span class="Blur">tout</span> <span class="Blur">en</span> <span class="Blur">apportant</span> <span class="Blur">mon</span> 
-                <span class="Blur">experience</span> <span class="Blur">personnelle</span><span class="Blur">.</span> </p>
-
-                <a href="#ThirdPage">
-                    <svg id="Arrow" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                         <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                    </svg>
-               </a>
-          </div>
-               </div>
-
-               
-</section> 
-
 <!--
-
-
 <section class="FourthPage" id="FourthPage">
      <div class="ProjectBox" id="ProjectBox">
           
@@ -160,24 +179,9 @@
                </div>
           </a>
           </div>
-     </div>
-</section>
-
-     <section class="FifthPage">
-          <div class="FithPageDivs"><p class="FifthPageText">After Effects</p></div>
-          <div class="FithPageDivs"><p class="FifthPageText">Illustrator</p></div>
-          <div class="FithPageDivs"><p class="FifthPageText">Indesign</p></div>
-          <div class="FithPageDivs"><p class="FifthPageText">Photoshop</p></div>
-          <div class="FithPageDivs"><p class="FifthPageText">Figma</p></div>
-          <div class="FithPageDivs"><p class="FifthPageText">Photographie</p></div>
-     </section>
-
-     </div>
--->
+     </div>-->
 
      <!--Custom Cursor-->
-<div id="circle" class="circle"></div>
-<div id="circle2" class="circle2"></div>
 
 <script>
      var circle = document.querySelector(".circle");

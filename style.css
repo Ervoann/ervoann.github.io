@@ -35,10 +35,13 @@ body {
 
 
 .Container {
+  
     width: 100%;
     height: 100%;
 
 }
+
+
 
 
 
@@ -413,6 +416,7 @@ body {
 /*Custom Cursor*/
 
 .circle {
+  z-index: 100;
 	position: fixed;
   width: 4px;
   height: 4px;
@@ -427,6 +431,7 @@ body {
 }
 
 .circle2 {
+  z-index: 100;
 	position: fixed;
   width: 50px;
   height: 50px;
@@ -441,6 +446,7 @@ body {
 }
 
 .circle2.grow {
+  z-index: 100;
   transform: translate(-50%,-50%) scale(1.5);
   background: radial-gradient(#a32121, transparent, transparent);
   border: 0px;
@@ -465,6 +471,15 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
 @media (max-width: 1000px) {
 
   .marquee p, .marquee2 p {
@@ -475,6 +490,7 @@ body {
   }
 
   .circle {
+    z-index: 100;
     position: fixed;
     width: 4px;
     height: 4px;
@@ -490,6 +506,7 @@ body {
   }
   
   .circle2 {
+    z-index: 100;
     position: fixed;
     width: 50px;
     height: 50px;
@@ -505,6 +522,7 @@ body {
   }
   
   .circle2.grow {
+    z-index: 100;
     transform: translate(-50%,-50%) scale(1.5);
     background: radial-gradient(#a32121, transparent, transparent);
     border: 0px;
@@ -513,6 +531,7 @@ body {
   }
   
   .circle.grow {
+    z-index: 100;
     opacity: 0%;
    }
    
@@ -524,6 +543,7 @@ body {
     animation-iteration-count: infinite;
     transition: .30s ease-in-out;
   }
+
   
             /*PremièrePageAnimations*/
   
@@ -542,3 +562,170 @@ body {
   }
   
 }
+
+.Arrow2 {
+  z-index: 50;
+  width: 100px;
+    height: 140px;
+    animation-duration: .60s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: .30s ease-in-out;
+}
+
+/* Menu*/
+.Arrowtext {
+	position: fixed;
+	z-index: 99;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: white;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+.Arrowtext button {
+  border: 0;
+  background-color: #000000;
+}
+
+.Arrowtext img {
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  z-index: 99;
+}
+
+.popover {
+  
+   display: none;
+   box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+}
+
+.popover:target {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popover .Arrowtext::after {
+  opacity: 0;
+}
+
+.popover .content {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 0;
+  height: 0;
+  color: #fff;
+  background-color: #000000;
+  animation: 1s grow ease forwards;
+  text-align: center;
+}
+
+.nav_list  {
+  list-style-type: none;
+}
+
+.nav_list a {
+  text-decoration: none;
+  font-size: 50px;
+  color: #fff;
+}
+
+.nav_list_item {
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav_list li {
+  padding: 15px 0;
+  text-transform: uppercase;
+  transform: translateY(200px);
+  opacity: 0;
+  animation: 2s slideUp ease forwards .5s;
+  position: relative;
+  font-family: Ginger;
+}
+
+.nav_list li::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  left: 0;
+  bottom: 10px;
+  background: #16db65; 
+  transition: all .5s ease;
+}
+
+.nav_list li:hover:before {
+      width: 100%;
+}
+
+.popover p {
+  padding: 50px;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards 1s;
+}
+
+.popover .close::after {
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #fff;
+  content: "×";
+  cursor: pointer;
+  opacity: 0; 
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+@keyframes grow {
+  100% {
+    height: 100%;
+    width: 100%;
+ }
+}
+
+@keyframes fadeIn {
+100% {
+  opacity: 1;
+ }
+}
+
+@keyframes slideUp {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+   }
+  }
+
+
