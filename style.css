@@ -790,18 +790,18 @@ body {
     }
   
     .Arrowtext2 img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
   
   .Arrowtext img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 
 
   .Linkedin {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   .Arrowtext2 {
@@ -830,7 +830,7 @@ body {
     right: 0;
     top: 0;
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 70px;
     color: white;
     opacity: 0;
     animation: 1s fadeIn ease forwards .5s;
@@ -844,4 +844,56 @@ body {
   li {
   margin: 40px;
 }
+
+
+
+.NameSurname {
+  font-size: 10rem;
+  color: #ffff;
+  font-family: Ginger;
+  text-align: center;
+  animation: FontResize2 3s ease-out;
+}
+
+
+          /*PremièrePageAnimations*/
+
+@keyframes clignoter {
+ 0%   { opacity:1; }
+ 40%   {opacity:0; }
+ 100% { opacity:1; }
+}
+
+@keyframes FontResize {
+  0% {font-size: 4rem;}
+}
+
+@keyframes FontResize2 {
+  0% {font-size: 15rem;}
+}
+
+
+.WhoAmI {
+  color: white;
+  padding: 30px;
+  font-family: "Montserra", sans-serif;
+  font-size: 4rem;
+  word-spacing: normal;
+}
+
+.WhoAmIBold {
+  color: #16db65;
+  padding: 30px;
+  font-family: "Montserra", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+
+
   }
+
+
+
