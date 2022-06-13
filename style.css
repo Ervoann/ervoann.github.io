@@ -696,6 +696,10 @@ body {
 
   @media (max-width: 1000px) {
 
+    .FourthPage {
+      font-size: 100px;
+    }
+
     .marquee p, .marquee2 p {
       display: inline-block;
       font-family: Ginger;
