@@ -253,7 +253,7 @@ body {
 /*Seconde Page*/
 .SecondPage {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   align-items: center;
   flex-direction: column;
@@ -264,8 +264,8 @@ body {
   .BigImageBox {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    transition: is ease-out;
+    width: 100%;
+    transition: ease-in-out;
   }
 
   .ImageBox {
@@ -513,7 +513,12 @@ body {
 
 
 
-
+  @media (max-width: 1000px) { 
+    .PagePdf {
+      width: 206.5px;
+      height: 292px;
+    }
+  }
 
 
 
