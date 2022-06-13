@@ -470,8 +470,14 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-
-
+.FourthPage {font-family: Ginger; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; } 
+.Apps { position: relative; } 
+.Apps li { list-style: none; text-align: center; } 
+.Apps li a { color: #333; text-decoration: none; font-size: 3em; padding: 5px 20px; display: inline-flex;  transition: 0.5s; } 
+.Apps:hover li a { color: rgba(246, 246, 246, 0.503); } 
+.Apps li:hover a { color: #000; background: rgba(255,255,255,1); } 
+.Apps li a:before { content: ''; position: absolute; top: 50%; left: 40%; transform: translate(-50%,-50%); display: flex; justify-content: center; align-items: center; font-size: 5em; color: rgba(0,0,0,.1); border-radius: 50%; z-index: -1; opacity: 0; font-weight: 900; text-transform: uppercase; letter-spacing: 500px; transition: letter-spacing 0.5s,left 0.5s; } 
+.Apps li a:hover:before { content: attr(data-text); opacity: 0.3; color:#16db65; left: 50%; letter-spacing: 10px; width: 1800px; height: 1800px; } 
 
 
 
