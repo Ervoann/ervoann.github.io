@@ -190,7 +190,9 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url(/ArticleFéminisme/Page4.png);
+  background-image: url(/FestivalCourtMetrage/Affiche\ Off\ The\ Grid\ Festival.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.3;
   z-index: 0;
 }
@@ -213,6 +215,61 @@ body {
 }
 
 
+/*FourthPage*/
+
+.FourthPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.Sentence4 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
+
+.Sentence4:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
+
+.bg4 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(/HomoSpacius/Mise\ en\ page\ HomoSpacius.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.image4 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
+}
+
+.Sentence4:hover + .image4 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
+}
+
 
 
 
@@ -224,6 +281,11 @@ body {
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: .30s ease-in-out;
+  }
+
+  #Arrow2 {
+    width: 50px;
+    height: 70px;
   }
 
 
@@ -343,7 +405,7 @@ body {
   justify-content: center;
   text-align: center;
   width: 100%;
-	z-index: 99;
+	z-index: 98;
   margin-top: 10px;
   color: white;
   opacity: 0;
