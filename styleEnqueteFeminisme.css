@@ -48,10 +48,7 @@ background-color: #000000;
 }
 
 
-.Container2 {
-  width: 100%;
-  height: 100%;
-}
+
 
 #Arrow2 {
   width: 50px;
@@ -73,7 +70,6 @@ opacity: 0;
 animation: 1s fadeIn ease forwards .5s;
 font-family: Ginger;
 }
-
 
 /*PremièrePage*/
 
