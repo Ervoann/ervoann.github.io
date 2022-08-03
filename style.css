@@ -122,15 +122,12 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  opacity: 1;
   margin-top: 50px;
-  transition: 1s ease-in-out;
+  opacity: 0;
+  animation:fade 400ms ease-in-out forwards;
 }
 
-.WhoAmIBox.show {
-  opacity: 1;
-  transition: 2s ease-in-out;
-}
+
 
 .WhoAmI {
   color: white;
@@ -138,6 +135,8 @@ body {
   font-family: "Montserra", sans-serif;
   font-size: 3rem;
   word-spacing: normal;
+  animation:fade 400ms ease-in-out forwards;
+
 }
 
 .WhoAmIBold {
@@ -148,10 +147,31 @@ body {
   font-size: 3rem;
   margin: 0;
   padding: 0;
+  opacity: 0;
+  animation:fade 400ms ease-in-out forwards;
 }
 
 .Blur:hover {
   filter: blur(4px);
+}
+
+@keyframes fade {
+  0% {
+    top:10px;
+    left:10px;
+    filter:blur(15px);
+    opacity:0;
+  }
+  50% {
+    filter:blur(10px);
+    opacity:0.9;
+  }
+  100% {
+    top:0px;
+    left:0px;
+    filter:blur(0px);
+    opacity:1;
+  }  
 }
 
 /*DeuxièmePage-CardBox*/

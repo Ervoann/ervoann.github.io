@@ -82,7 +82,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    background-image: url(/Débéloise/Affiche\ A3_page-0001.jpg);
+    background-image: url(/Débéloise/Poster-mockup.png);
     opacity: 0.3;
     z-index: 0;
     background-repeat: no-repeat;
@@ -252,7 +252,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url(/HomoSpacius/Mise\ en\ page\ HomoSpacius.png);
+  background-image: url("/InfographieMacdo/Preview\ Before.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.3;
