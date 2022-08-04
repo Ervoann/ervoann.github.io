@@ -786,6 +786,7 @@ body {
     column-gap:20px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 20px;
   }
   @media (max-width:1200px){
     #gallery{
@@ -797,6 +798,7 @@ body {
     -moz-column-gap:20px;
     column-gap:20px;
     cursor: none;
+    padding-top: 20px;
   }
   }
   @media (max-width:800px){
@@ -809,6 +811,7 @@ body {
     -moz-column-gap:20px;
     column-gap:20px;
     cursor: none;
+    padding-top: 20px;
   }
   }
   @media (max-width:600px){
@@ -817,6 +820,7 @@ body {
     -moz-column-count:1;
     column-count:1;
     cursor: none;
+    padding-top: 20px;
   }  
   }
   #gallery img,#gallery video {

@@ -196,7 +196,6 @@ body {
   height: 100%;
   background-image: url(/FestivalCourtMetrage/Affiche\ Off\ The\ Grid\ Festival.png);
   background-repeat: no-repeat;
-  background-size: cover;
   opacity: 0.3;
   z-index: 0;
   background-size: cover;
@@ -254,7 +253,6 @@ body {
   height: 100%;
   background-image: url(/HomoSpacius/Mise\ en\ page\ HomoSpacius.png);
   background-repeat: no-repeat;
-  background-size: cover;
   opacity: 0.3;
   z-index: 0;
   background-size: cover;
