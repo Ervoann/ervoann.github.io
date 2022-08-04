@@ -85,6 +85,8 @@ body {
     background-image: url(/ExpoMaisonSoustraire/Page3.png);
     opacity: 0.3;
     z-index: 0;
+    background-size: cover;
+    background-position: center;
   }
 
   .image {
@@ -139,6 +141,8 @@ body {
   background-image: url(/ArticleFéminisme/Page4.png);
   opacity: 0.3;
   z-index: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .image2 {
@@ -195,6 +199,8 @@ body {
   background-size: cover;
   opacity: 0.3;
   z-index: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .image3 {
@@ -251,6 +257,8 @@ body {
   background-size: cover;
   opacity: 0.3;
   z-index: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .image4 {
