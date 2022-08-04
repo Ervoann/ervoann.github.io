@@ -225,6 +225,21 @@ body {
 
   }
 
+  .Appareil1 {
+    height: 100px;
+    width: 200px;
+    background-image: url("/Materiel/panasonic-lumix-gx9-silver.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Appareil2 {
+    height: 100px;
+    width: 200px;
+    background-image: url("/Materiel/Screen_Shot_2020_07_13_at_10.52.32_AM.jpg");
+    background-size: cover;
+  }
+
   .FirstPart {
     width: 100VW;
     height: 50Vh;
@@ -244,16 +259,26 @@ body {
     padding-left: 40px;
   }
 
-  .Color {
-    height: 50px;
-    width: 50px;
-    background-color: #D1C4B2;
+  .Objectif1 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/Materiel/G\ VARIO\ 12-32.jpg");
+    background-size: cover;
   }
 
-  .Color2 {
-    height: 50px;
-    width: 50px;
-    background-color: #6F4A31;
+  .Objectif2 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/Materiel/G\ VARIO\ 35-100.jpg");
+    background-size: cover;
+  }
+
+  .Objectif3 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/Materiel/G\ 25.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
   .ColorText {
@@ -261,14 +286,14 @@ body {
     font-family: "Montserra", sans-serif;
     font-size: 1.5rem;
     word-spacing: normal;
-    padding-top: 12px;
-    padding-left: 70px;
+    padding-top: 38px;
+    padding-left: 20px;
   }
 
 
   .parallax {
     /* The image used */
-    background-image: url("/ProjetFanny/PreviewLogo.png");
+    background-image: url("/Guinguette/Preview\ On\ Page.jpg");
     /* Full height */
     height: 600px;
     margin-top: 50px;
@@ -282,7 +307,7 @@ body {
 
   .parallax2 {
     /* The image used */
-    background-image: url("/ProjetFanny/PreviewLogo.png");
+    background-image: url("/Guinguette/Preview\ On\ Page.jpg");
   
     /* Full height */
     height: 600px;
@@ -748,3 +773,55 @@ body {
 
   }
 
+
+
+  #gallery{
+    cursor: none;
+    -webkit-column-count:4;
+    -moz-column-count:4;
+    column-count:4;
+    
+    -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (max-width:1200px){
+    #gallery{
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+      
+    -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+    cursor: none;
+  }
+  }
+  @media (max-width:800px){
+    #gallery{
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+      
+    -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+    cursor: none;
+  }
+  }
+  @media (max-width:600px){
+    #gallery{
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+    cursor: none;
+  }  
+  }
+  #gallery img,#gallery video {
+    width:100%;
+    height:auto;
+    margin: 4% auto;
+    cursor: none;
+  }
