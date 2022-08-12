@@ -634,7 +634,7 @@ margin: 40px;
 
 h2 {
   font-family: Ginger;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 
@@ -683,8 +683,8 @@ h2 {
 
 .sm a{
   display: inline-flex;
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   justify-content: space-evenly;
   align-items: center;
   color: #20284D;
@@ -694,7 +694,7 @@ h2 {
 }
 
 .left {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .sm a:hover{
