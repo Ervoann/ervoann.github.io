@@ -1,0 +1,710 @@
+/*Typos*/
+
+@font-face {
+  font-family: Ginger;
+  src: url(/Fonts/Ginger.ttf);
+}
+
+@font-face {
+  font-family: UncutBold;
+  src: url(/Fonts/Uncut-Sans-Bold.otf);
+}
+
+@font-face {
+  font-family: UncutReg;
+  src: url(/Fonts/Uncut-Sans-Regular.otf);
+}
+
+/*Initialisation*/
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior:smooth;
+  cursor: none;
+  box-sizing: border-box;
+}
+
+body {
+margin: 0;
+width: 100vw;
+height: 100vh;
+background-color: black;
+overflow: hidden;
+}
+
+
+.Container {
+
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+/*PremièrePage*/
+
+.FirstPage {
+display: flex;
+width: 100%;
+height: 100%;
+align-items: center;
+justify-content: center;
+background-color: black;
+flex-direction: column;
+}
+
+.Sentence1 {
+margin-top: 150px;
+font-size: 3rem;
+color: #ffff;
+font-family: UncutReg;
+text-align: center;
+}
+.Sentence2 {
+  opacity: 0;
+  }
+
+.NameSurname {
+font-size: 6rem;
+color: #ffff;
+font-family: Ginger;
+text-align: center;
+animation: FontResize2 3s ease-out;
+}
+
+#Arrow {
+width: 50px;
+height: 70px;
+animation-duration: .60s;
+animation-name: clignoter;
+animation-iteration-count: infinite;
+transition: .30s ease-in-out;
+}
+
+        /*PremièrePageAnimations*/
+
+@keyframes clignoter {
+0%   { opacity:1; }
+40%   {opacity:0; }
+100% { opacity:1; }
+}
+
+@keyframes FontResize {
+0% {font-size: 4rem;}
+}
+
+@keyframes FontResize2 {
+0% {font-size: 9rem;}
+}
+
+
+
+
+
+
+/*Custom Cursor*/
+
+.circle {
+z-index: 100;
+position: fixed;
+width: 4px;
+height: 4px;
+background-color: white;
+border: 1px solid white;
+border-radius: 50px;
+left: 0;
+top:0;
+pointer-events: none;
+transform: translate(-50%,-50%);
+transition: .15s;
+}
+
+.circle2 {
+z-index: 100;
+position: fixed;
+width: 50px;
+height: 50px;
+border: 2px solid #a32121;
+border-radius: 50px;
+left: 0;
+top:0;
+pointer-events: none;
+cursor: none;
+transform: translate(-50%,-50%);
+transition: .2s;
+}
+
+.circle2.grow {
+z-index: 100;
+transform: translate(-50%,-50%) scale(1.5);
+background: radial-gradient(#a32121, transparent, transparent);
+border: 0px;
+opacity: 80%;
+}
+
+.circle.grow {
+opacity: 0%;
+}
+
+
+/*No Selection*/
+
+.noselect {
+-webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.FourthPage {font-family: Ginger; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; } 
+.Apps { position: relative; } 
+.Apps li { list-style: none; text-align: center; } 
+.Apps li a { color: #333; text-decoration: none; font-size: 3em; padding: 5px 20px; display: inline-flex;  transition: 0.5s; } 
+.Apps:hover li a { color: rgba(246, 246, 246, 0.503); } 
+.Apps li:hover a { color: #000; background: rgba(255,255,255,1); } 
+.Apps li a:before { content: ''; position: absolute; top: 50%; left: 40%; transform: translate(-50%,-50%); display: flex; justify-content: center; align-items: center; font-size: 5em; color: rgba(0,0,0,.1); border-radius: 50%; z-index: -1; opacity: 0; font-weight: 900; text-transform: uppercase; letter-spacing: 500px; transition: letter-spacing 0.5s,left 0.5s; } 
+.Apps li a:hover:before { content: attr(data-text); opacity: 0.3; color:#16db65; left: 50%; letter-spacing: 10px; width: 1800px; height: 1800px; } 
+
+
+
+
+
+
+
+
+
+.Arrow2 {
+z-index: 50;
+width: 100px;
+  height: 140px;
+  animation-duration: .60s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: .30s ease-in-out;
+}
+
+.Arrowtext2 {
+position: fixed;
+display: flex;
+flex-direction: row;
+z-index: 99;
+width: 20px;
+height: 20px;
+left: 0;
+top: 0;
+margin-top: 10px;
+margin-left: 10px;
+color: white;
+opacity: 0;
+animation: 1s fadeIn ease forwards .5s;
+}
+
+.Arrowtext2 button {
+border: 0;
+background-color: #000000;
+}
+
+.Arrowtext2 img {
+width: 20px;
+height: 20px;
+}
+
+.Linkedin {
+margin-left: 10px;
+}
+
+
+.Arrowtext3 {
+position: fixed;
+z-index: 99;
+width: 40px;
+height: 50px;
+right: 0;
+bottom: 0;
+margin-bottom: 30px;
+margin-right: 15px;
+color: white;
+opacity: 0;
+animation: 1s fadeIn ease forwards .5s;
+}
+
+.Arrowtext3 button {
+border: 0;
+background-color: transparent;
+}
+
+.Arrowtext3 p {
+font-size: 1rem;
+color: #ffff;
+font-family: UncutReg;
+}
+.Arrowtext3 p:hover {
+font-family: Ginger;
+}
+
+
+
+
+/* Menu*/
+.Arrowtext {
+position: fixed;
+z-index: 99;
+width: 20px;
+height: 20px;
+right: 0;
+top: 0;
+margin-top: 10px;
+margin-right: 10px;
+color: white;
+opacity: 0;
+animation: 1s fadeIn ease forwards .5s;
+}
+
+.Arrowtext button {
+border: 0;
+background-color: #000000;
+}
+
+.Arrowtext img {
+width: 20px;
+height: 20px;
+}
+
+.container {
+z-index: 99;
+}
+
+.popover {
+
+ display: none;
+ box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+}
+
+.popover:target {
+position: absolute;
+right: 0;
+top: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.popover .Arrowtext::after {
+opacity: 0;
+}
+
+.popover .content {
+z-index: 99;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+width: 0;
+height: 0;
+color: #fff;
+background-color: #000000;
+animation: 1s grow ease forwards;
+text-align: center;
+}
+
+.nav_list  {
+list-style-type: none;
+}
+
+.nav_list a {
+text-decoration: none;
+font-size: 50px;
+color: #fff;
+}
+
+.nav_list_item {
+height: 100%;
+overflow: hidden;
+}
+
+.nav_list li {
+padding: 15px 0;
+text-transform: uppercase;
+transform: translateY(200px);
+opacity: 0;
+animation: 2s slideUp ease forwards .5s;
+position: relative;
+font-family: Ginger;
+}
+
+.nav_list li::before {
+content: '';
+position: absolute;
+height: 2px;
+width: 0px;
+left: 0;
+bottom: 10px;
+background: #16db65; 
+transition: all .5s ease;
+}
+
+.nav_list li:hover:before {
+    width: 100%;
+}
+
+.popover p {
+padding: 50px;
+opacity: 0;
+animation: 1s fadeIn ease forwards 1s;
+}
+
+.popover .close::after {
+right: 0;
+top: 0;
+width: 50px;
+height: 50px;
+position: absolute;
+display: flex;
+z-index: 1;
+font-size: 50px;
+align-items: center;
+justify-content: center;
+background-color: #000000;
+color: #fff;
+content: "×";
+cursor: pointer;
+opacity: 0; 
+animation: 1s fadeIn ease forwards .5s;
+}
+
+@keyframes grow {
+100% {
+  height: 100%;
+  width: 100%;
+}
+}
+
+@keyframes fadeIn {
+100% {
+opacity: 1;
+}
+}
+
+@keyframes slideUp {
+100% {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+@keyframes fadeOut {
+100% {
+  opacity: 0;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+  .card{
+    width: 226px;
+    height: 187,5px;
+  }
+
+  .Sentence2 {
+    margin-top: 0px;
+    font-size: 3rem;
+    color: #ffff;
+    font-family: UncutReg;
+    text-align: center;
+    opacity: 1;
+    }
+
+    .Sentence1 {
+      opacity: 0;
+      }
+    
+
+  .Arrowtext3 {
+    position: fixed;
+    z-index: 99;
+    width: 40px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 50px;
+    margin-right: 55px;
+    color: white;
+    opacity: 0;
+    animation: 1s fadeIn ease forwards .5s;
+  }
+  
+  .Arrowtext3 button {
+    border: 0;
+    background-color: transparent;
+  }
+  
+  .Arrowtext3 p {
+    font-size: 2rem;
+    color: #ffff;
+    font-family: UncutReg;
+  }
+  .Arrowtext3 p:hover {
+    font-family: Ginger;
+  }
+
+  .FourthPage {
+    font-size: 3rem;
+  }
+
+  .marquee p, .marquee2 p {
+    display: inline-block;
+    font-family: Ginger;
+    color: white;
+    font-size: 10rem;
+  }
+
+  .circle {
+    z-index: 100;
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    left: 0;
+    top:0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: .15s;
+    opacity: 0;
+  }
+  
+  .circle2 {
+    z-index: 100;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #a32121;
+    border-radius: 50px;
+    left: 0;
+    top:0;
+    pointer-events: none;
+    cursor: none;
+    transform: translate(-50%,-50%);
+    transition: .2s;
+    opacity: 0;
+  }
+  
+  .circle2.grow {
+    z-index: 100;
+    transform: translate(-50%,-50%) scale(1.5);
+    background: radial-gradient(#a32121, transparent, transparent);
+    border: 0px;
+    opacity: 80%;
+    opacity: 0;
+  }
+  
+  .circle.grow {
+    z-index: 100;
+    opacity: 0%;
+   }
+   
+   #Arrow {
+    width: 100px;
+    height: 140px;
+    animation-duration: .60s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: .30s ease-in-out;
+  }
+
+  
+            /*PremièrePageAnimations*/
+  
+  @keyframes clignoter {
+   0%   { opacity:1; }
+   40%   {opacity:0; }
+   100% { opacity:1; }
+  }
+
+  .SlidersTitles {
+    font-family: UncutReg;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding: 10px;
+  }
+
+  .popover .close::after {
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #fff;
+    content: "×";
+    cursor: pointer;
+    opacity: 0; 
+    animation: 1s fadeIn ease forwards .5s;
+    margin: 30px;
+  }
+
+  .Arrowtext2 img {
+  width: 50px;
+  height: 50px;
+}
+
+.Arrowtext img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.Linkedin {
+  margin-left: 20px;
+}
+
+.Arrowtext2 {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+.Arrowtext {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: 0;
+  margin-top: 20px;
+  margin-right: 50px;
+  color: white;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards .5s;
+}
+.nav_list a {
+  text-decoration: none;
+  font-size: 100px;
+  color: #fff;
+}
+
+li {
+margin: 40px;
+}
+}
+
+h2 {
+  font-family: Ginger;
+  font-size: 3.5rem;
+}
+
+
+
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  width: 552px;
+  height: 375px;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+   border-radius: 20px;
+}
+.back{
+  background: #F6D1B6;
+  transform: perspective(600px) rotateY(180deg);
+  border-radius: 20px;
+}
+.back-content{
+  color: #20284D;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+
+.sm a{
+  display: inline-flex;
+  width: 70px;
+  height: 70px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #20284D;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+
+.left {
+  margin-left: 10px;
+}
+
+.sm a:hover{
+  background: #20284D;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+

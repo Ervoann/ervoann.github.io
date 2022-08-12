@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <link rel="icon" href="/Logo.ico">
+      <title>Georges Ervoann</title>
+      <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+      <link rel="stylesheet" href="/Css/Contact/styleContact.css">
+      <script rel="stylesheet" src="code.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+      
+</head>
+
+<body>
+
+     <div class="container">
+          <div class="Arrowtext"><h1>
+               <a class="open" href="#menu"><button class="btn"><img src="/Menu.png"></button></a>
+            </h1>
+          </div>
+
+          <div class="Arrowtext2"><h1>
+               <a class="open" href="https://www.instagram.com/ervoann_artist/" target="_blank"><button class="btn"><img src="/Instagram.png"></button></a>
+            </h1>
+            <h1>
+               <a class="open" href="https://www.linkedin.com/in/ervoann-georges-544089209/" target="_blank"><button class="btn"><img class="Linkedin" src="/Linkedin.png"></button></a>
+            </h1>
+          </div>
+
+          <div class="Arrowtext3">
+               <a class="open" href="mailto:georges.ervoann@gmail.com"><button class="btn"><p>Email Me</p></button></a>
+          </div>
+
+          
+          
+             
+         <div class="popover" id="menu">
+          <div class = 'content'>
+           <a href="#" class="close"></a>
+            <div class = 'nav'>
+             <ul class = 'nav_list'>
+               
+               <div class = 'nav_list_item'>
+                <li><a href="/index.html">Accueil</a></li>
+               </div>
+              <div class = 'nav_list_item'>
+                   <li><a href="/index.html#AProposDeMoi">A propos de moi</a></li>
+               </div>
+             <div class = 'nav_list_item'>
+                <li><a href="/index.html#Compétences">Compétences</a></li>
+               </div>
+             <div class = 'nav_list_item'>
+                <li><a href="/index.html#Projets">Projets</a></li>
+               </div>
+              <div class = 'nav_list_item'>
+                   <li><a href="Contact.html">Contact</a></li>
+               </div>
+               
+              </ul>
+           </div>
+          </div>
+          </div>
+          </div>
+
+
+          <section class="FirstPage">
+
+     <!--First Page-->
+    
+    <div class="Container">
+
+    <div class="card middle">
+      <div class="front">
+        <img src="FondDeCarte.png" alt="">
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <h2>Georges Ervoann</h2>
+          <span></span>
+          <div class="sm">
+            <a href="https://www.instagram.com/ervo_pri/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/ervoann-georges-544089209/" target="_blank" class="left"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="mailto:georges.ervoann@gmail.com" class="left"><i class="fa fa-envelope fa-2x"></i></a>
+            <a href="tel:+33767651793" class="left"><i class="fa fa-phone fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="Sentence1">Survolez pour découvrir ma carte</h1>
+    <h1 class="Sentence2">Cliquez pour découvrir ma carte</h1>
+    
+    </div>
+    
+    </section>
+
+            <!--Custom Cursor-->
+<div id="circle" class="circle"></div>
+<div id="circle2" class="circle2"></div>
+
+<script>
+     var circle = document.querySelector(".circle");
+     var circle2 = document.querySelector(".circle2");
+     document.addEventListener("mousemove", function(e){
+          circle.style.cssText = circle2.style.cssText = "left: "+ e.clientX + "px; top:" + e.clientY +"px;";
+
+     });
+
+     let links = Array.from(document.querySelectorAll("a"));
+
+     console.log(links);
+
+     links.forEach(link =>{
+          link.addEventListener('mouseover', ()=> {
+               circle2.classList.add("grow");
+               circle.classList.add("grow");
+          })
+
+          link.addEventListener('mouseleave', ()=> {
+               circle2.classList.remove("grow");
+               circle.classList.remove("grow");
+          })
+
+
+     })
+
+     let Cards = Array.from(document.querySelectorAll(".Card1"));
+
+     console.log(Cards);
+
+     Cards.forEach(Card =>{
+          Card.addEventListener('mouseover', ()=> {
+               circle2.classList.add("grow");
+               circle.classList.add("grow");
+          })
+
+          Card.addEventListener('mouseleave', ()=> {
+               circle2.classList.remove("grow");
+               circle.classList.remove("grow");
+          })
+
+
+     })
+
+</script>
+
+  </body>
+</html>
