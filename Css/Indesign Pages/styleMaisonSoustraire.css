@@ -574,6 +574,9 @@ top: 0;
 /*Responsive*/
 
  @media (max-width: 1000px) {
+  .TopBar {
+    margin-top: 50px;
+   }
   .Arrowtext4 {
     position: fixed;
     z-index: 99;
@@ -768,3 +771,4 @@ top: 0;
   .Arrowtext4 p:hover {
     font-family: Ginger;
   }
+

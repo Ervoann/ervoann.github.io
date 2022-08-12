@@ -594,6 +594,9 @@ opacity: 1;
 /*Responsive*/
 
 @media (max-width: 1000px) {
+  .TopBar {
+    margin-top: 50px;
+   }
   .Arrowtext4 {
     position: fixed;
     z-index: 99;
