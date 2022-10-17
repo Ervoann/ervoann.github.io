@@ -138,9 +138,11 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url(/ArticleFéminisme/Page4.png);
+  background-image: url(/SoiréeLyon/8.jpg);
   opacity: 0.3;
   z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image2 {
@@ -192,7 +194,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url(/FestivalCourtMetrage/Affiche\ Off\ The\ Grid\ Festival.png);
+  background-image: url(/SoiréeDragLyon/18.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.3;
