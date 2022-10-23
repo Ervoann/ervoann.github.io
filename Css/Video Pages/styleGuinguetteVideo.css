@@ -1,0 +1,848 @@
+
+
+/*Typos*/
+
+@font-face {
+    font-family: Ginger;
+    src: url(/Fonts/Ginger.ttf);
+  }
+
+@font-face {
+    font-family: UncutBold;
+    src: url(/Fonts/Uncut-Sans-Bold.otf);
+  }
+
+@font-face {
+    font-family: UncutReg;
+    src: url(/Fonts/Uncut-Sans-Regular.otf);
+  }
+
+  @font-face {
+    font-family: Cascadia;
+    src: url(/Fonts/Cascadia.ttf);
+  }
+
+  @font-face {
+    font-family: Marianne;
+    src: url(/Fonts/Marianne-Regular.otf);
+  }
+
+  @font-face {
+    font-family: Hell;
+    src: url(/Fonts/Hell\ Finland.ttf);
+  }
+
+  @font-face {
+    font-family: Ruler Modern;
+    src: url(/Fonts/Ruler\ Modern.ttf);
+  }
+
+/*Initialisation*/
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior:smooth;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  overflow-x: hidden;
+  z-index: 10;
+}
+
+
+
+
+
+#Arrow2 {
+    width: 50px;
+    height: 70px;
+  }
+
+.Arrowtext3 {
+	position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+	z-index: 98;
+  margin-top: 10px;
+  color: white;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards .5s;
+  font-family: Ginger;
+}
+
+/*PremièrePage*/
+
+.FirstPage {
+  display: flex;
+  width: 100vw;
+  height: fit-content;
+  background-color: black;
+  flex-direction: column;
+}
+
+.TitleLeft {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
+  
+}
+
+  .TitleBox {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 50vw;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 50px;
+  }
+
+  .SubtitleBox {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 20vw;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 50px;
+  }
+
+  .Title {
+    font-family: UncutReg;
+    font-size: 3rem;
+    text-align: left;
+    color: white;
+    padding: 10px;
+    margin-left: 30px;
+  }
+
+  .Subtitle {
+    font-family: UncutReg;
+    font-size: 2.5rem;
+    text-align: left;
+    color: white;
+    padding: 10px;
+    margin-left: 30px;
+  }
+
+
+  .PresentationTextBox {
+    width: 40vw;
+    display: flex;
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  .PresentationText {
+    color: white;
+    padding: 30px;
+    font-family: "Montserra", sans-serif;
+    font-size: 2rem;
+    word-spacing: normal;
+    margin-left: 13px;
+  }
+  
+  .Bold {
+    color: #16db65;
+    padding: 30px;
+    font-family: "Montserra", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Blur:hover {
+    filter: blur(4px);
+  }
+
+
+  .PresentationBox {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    transition: 1s ease-in-out;
+  }
+
+
+
+  .PresentationBox2 {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    transition: 1s ease-in-out;
+  }
+
+
+
+
+  .InfoTextBox {
+    width: 40vw;
+    display: flex;
+    text-align: left;
+  }
+
+  .InfoText {
+    color: white;
+    font-family: "Montserra", sans-serif;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+
+  .InfoTextRuler {
+    color: rgb(255, 255, 255);
+    font-family: Ruler Modern;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    padding-top: 20px;
+    padding-left: 40px;
+
+  }
+
+  .InfoTextHell {
+    color: rgb(255, 255, 255);
+    font-family: Hell;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    padding-top: 20px;
+    padding-left: 40px;
+
+  }
+
+  .FirstPart {
+    width: 100VW;
+    height: 50Vh;
+    display: flex;
+
+  }
+
+  .BigColorBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ColorBox {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+
+  .Color {
+    height: 50px;
+    width: 50px;
+    background-color: #D6D4EB;
+  }
+
+  .Color2 {
+    height: 50px;
+    width: 50px;
+    background-color: #EE9FBF;
+  }
+
+  .ColorText {
+    color: white;
+    font-family: "Montserra", sans-serif;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    padding-top: 12px;
+    padding-left: 70px;
+  }
+
+
+  .parallax {
+    /* The image used */
+    background-image: url("/VideoPreview/BackgroundGuinguetteVideo.PNG");
+    /* Full height */
+    height: 600px;
+    margin-top: 50px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url("/VideoPreview/BackgroundGuinguetteVideo.PNG");
+  
+    /* Full height */
+    height: 600px;
+    margin-top: 100px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/*Seconde Page*/
+.SecondPage {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+
+  .BigImageBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: ease-in-out;
+  }
+
+  .ImageBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    z-index: 0;
+  }
+
+  .EndImageBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .PagePdf {
+    width: 413px;
+    height: 584px;
+  }
+
+  .SpaceLeft {
+    margin-left:50px;
+  }
+
+  .CreditBox {
+    display: flex;
+    width: 100vw;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 50px;
+  }
+
+  
+  .InfoTextColorful {
+    color: #16db65;
+    padding: 30px;
+    font-family: "Montserra", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    padding-left: 40px;
+  }
+
+  /*Custom Cursor*/
+
+  .circle {
+    z-index: 100;
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    left: 0;
+    top:0;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: .15s;
+  }
+  
+  .circle2 {
+    z-index: 100;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #a32121;
+    border-radius: 50px;
+    left: 0;
+    top:0;
+    pointer-events: none;
+    cursor: none;
+    transform: translate(-50%,-50%);
+    transition: .2s;
+  }
+  
+  .circle2.grow {
+    z-index: 100;
+    transform: translate(-50%,-50%) scale(1.5);
+    background: radial-gradient(#a32121, transparent, transparent);
+    border: 0px;
+    opacity: 80%;
+  }
+  
+  .circle.grow {
+    opacity: 0%;
+   }
+
+
+
+
+/*Menus*/
+
+
+.Arrowtext2 {
+	position: fixed;
+  display: flex;
+  flex-direction: row;
+	z-index: 99;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+.Arrowtext2 button {
+  border: 0;
+  background-color: transparent;
+}
+
+.Arrowtext2 img {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.Linkedin {
+  margin-left: 10px;
+}
+
+/* Menu*/
+.Arrowtext {
+	position: fixed;
+	z-index: 99;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: white;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+.Arrowtext button {
+  border: 0;
+  background-color: transparent;
+}
+
+.Arrowtext img {
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  z-index: 99;
+}
+
+.popover {
+  
+   display: none;
+   box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+}
+
+.popover:target {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popover .Arrowtext::after {
+  opacity: 0;
+}
+
+.popover .content {
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 0;
+  height: 0;
+  color: #fff;
+  background-color: #000000;
+  animation: 1s grow ease forwards;
+  text-align: center;
+}
+
+.nav_list  {
+  list-style-type: none;
+}
+
+.nav_list a {
+  text-decoration: none;
+  font-size: 50px;
+  color: #fff;
+}
+
+.nav_list_item {
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav_list li {
+  padding: 15px 0;
+  text-transform: uppercase;
+  transform: translateY(200px);
+  opacity: 0;
+  animation: 2s slideUp ease forwards .5s;
+  position: relative;
+  font-family: Ginger;
+}
+
+.nav_list li::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  left: 0;
+  bottom: 10px;
+  background: #16db65; 
+  transition: all .5s ease;
+}
+
+.nav_list li:hover:before {
+      width: 100%;
+}
+
+.popover p {
+  padding: 50px;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards 1s;
+}
+
+.popover .close::after {
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #fff;
+  content: "×";
+  cursor: pointer;
+  opacity: 0; 
+  animation: 1s fadeIn ease forwards .5s;
+}
+
+@keyframes grow {
+  100% {
+    height: 100%;
+    width: 100%;
+ }
+}
+
+@keyframes fadeIn {
+100% {
+  opacity: 1;
+ }
+}
+
+@keyframes slideUp {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+   }
+  }
+
+
+
+
+
+/*Responsive*/
+
+ @media (max-width: 1000px) {
+  .TopBar {
+    margin-top: 50px;
+   }
+    
+  .Arrowtext4 {
+    position: fixed;
+    z-index: 99;
+    width: 40px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 50px;
+    margin-right: 55px;
+    color: white;
+    opacity: 0;
+    animation: 1s fadeIn ease forwards .5s;
+  }
+  
+  .Arrowtext4 button {
+    border: 0;
+    background-color: transparent;
+  }
+  
+  .Arrowtext4 p {
+    font-size: 2rem;
+    color: #ffff;
+    font-family: UncutReg;
+  }
+  .Arrowtext4 p:hover {
+    font-family: Ginger;
+  }
+
+
+    .PagePdf {
+      width: 206.5px;
+      height: 292px;
+    }
+
+    .circle {
+      z-index: 100;
+      position: fixed;
+      width: 4px;
+      height: 4px;
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 50px;
+      left: 0;
+      top:0;
+      pointer-events: none;
+      transform: translate(-50%,-50%);
+      transition: .15s;
+      opacity: 0;
+    }
+    
+    .circle2 {
+      z-index: 100;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #a32121;
+      border-radius: 50px;
+      left: 0;
+      top:0;
+      pointer-events: none;
+      cursor: none;
+      transform: translate(-50%,-50%);
+      transition: .2s;
+      opacity: 0;
+    }
+    
+    .circle2.grow {
+      z-index: 100;
+      transform: translate(-50%,-50%) scale(1.5);
+      background: radial-gradient(#a32121, transparent, transparent);
+      border: 0px;
+      opacity: 80%;
+      opacity: 0;
+    }
+    
+    .circle.grow {
+      z-index: 100;
+      opacity: 0%;
+     }
+     
+  
+    .SlidersTitles {
+      font-family: UncutReg;
+      font-size: 3rem;
+      text-align: center;
+      color: white;
+      padding: 10px;
+    }
+  
+    .popover .close::after {
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      display: flex;
+      z-index: 1;
+      font-size: 100px;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000;
+      color: #fff;
+      content: "×";
+      cursor: pointer;
+      opacity: 0; 
+      animation: 1s fadeIn ease forwards .5s;
+      margin: 30px;
+    }
+  
+    .Arrowtext2 img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .Arrowtext img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .Linkedin {
+    margin-left: 20px;
+  }
+
+  .Arrowtext2 {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    opacity: 0;
+    animation: 1s fadeIn ease forwards .5s;
+  }
+
+  .Arrowtext {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-right: 50px;
+    color: white;
+    opacity: 0;
+    animation: 1s fadeIn ease forwards .5s;
+  }
+  .nav_list a {
+    text-decoration: none;
+    font-size: 100px;
+    color: #fff;
+  }
+
+  li {
+  margin: 40px;
+}
+
+.ImageBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    z-index: 0;
+  }
+
+  }
+
+  .Arrowtext4 {
+    position: fixed;
+    z-index: 99;
+    width: 40px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    color: white;
+    opacity: 0;
+    animation: 1s fadeIn ease forwards .5s;
+  }
+  
+  .Arrowtext4 button {
+    border: 0;
+    background-color: transparent;
+  }
+  
+  .Arrowtext4 p {
+    font-size: 1rem;
+    color: #ffff;
+    font-family: UncutReg;
+  }
+  .Arrowtext4 p:hover {
+    font-family: Ginger;
+  }
+
+
+  .Objectif1 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/Materiel/G\ VARIO\ 12-32.jpg");
+    background-size: cover;
+  }
+
+  .Objectif2 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/Materiel/G\ VARIO\ 35-100.jpg");
+    background-size: cover;
+  }
+
+  .Objectif3 {
+    height: 100px;
+    width: 100px;
+    background-image: url("/Materiel/G\ 25.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Appareil1 {
+    height: 100px;
+    width: 200px;
+    background-image: url("/Materiel/panasonic-lumix-gx9-silver.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Appareil2 {
+    height: 100px;
+    width: 200px;
+    background-image: url("/Materiel/Screen_Shot_2020_07_13_at_10.52.32_AM.jpg");
+    background-size: cover;
+  }
