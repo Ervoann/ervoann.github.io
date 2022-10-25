@@ -846,3 +846,16 @@ body {
     background-image: url("/Materiel/Screen_Shot_2020_07_13_at_10.52.32_AM.jpg");
     background-size: cover;
   }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #16db65;
+  width: 2px;
+}
