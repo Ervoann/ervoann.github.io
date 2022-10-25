@@ -888,3 +888,16 @@ body {
   .Arrowtext4 p:hover {
     font-family: Ginger;
   }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #16db65;
+    width: 2px;
+  }
