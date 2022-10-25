@@ -74,6 +74,14 @@ body {
   animation: FontResize2 3s ease-out;
 }
 
+.Job {
+  font-size: 1.5rem;
+  color: #16db65;
+  font-family: UncutReg;
+  text-align: center;
+  animation: fade2 1s ease-out;
+}
+
 #Arrow {
   width: 50px;
   height: 70px;
@@ -99,6 +107,20 @@ body {
   0% {font-size: 9rem;}
 }
 
+@keyframes fade2 {
+  0% {
+    filter:blur(15px);
+    opacity:0;
+  }
+  50% {
+    filter:blur(10px);
+    opacity:0.9;
+  }
+  100% {
+    filter:blur(0px);
+    opacity:1;
+  }  
+}
 
 /*DeuxièmePage*/
 
@@ -490,8 +512,16 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-.FourthPage {font-family: Ginger; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; } 
-.Apps { position: relative; } 
+.FourthPage {
+  font-family: Ginger; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  overflow: hidden;
+}
+
+.Apps { position: relative;} 
 .Apps li { list-style: none; text-align: center; } 
 .Apps li a { color: #333; text-decoration: none; font-size: 3em; padding: 5px 20px; display: inline-flex;  transition: 0.5s; } 
 .Apps:hover li a { color: rgba(246, 246, 246, 0.503); } 
