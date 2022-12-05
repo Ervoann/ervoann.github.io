@@ -277,6 +277,242 @@ body {
 }
 
 
+/*FithPage*/
+
+.FithPage {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    flex-direction: column;
+  }
+  
+  .Sentence5 {
+    font-size: 3rem;
+    color: #ffff;
+    font-family: UncutReg;
+    text-align: center;
+    transition: 2s ease-in-out;
+    z-index: 5;
+  }
+
+  .NameSurname {
+    font-size: 6rem;
+    color: #ffff;
+    font-family: Ginger;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .Sentence5:hover {
+    filter: drop-shadow(0 0 0.75rem black);
+    transition: 2s ease-in-out;
+  }
+
+  .bg5 {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(/ExpoMaisonSoustraire/Page3.png);
+    opacity: 0.3;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image5 {
+    pointer-events: none;
+      position: absolute;
+      height: 50vh;
+      max-height: 400px;
+    right:0;
+      opacity: 0;
+      transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+    z-index: 2;
+  }
+
+  .Sentence5:hover + .image {
+    opacity: 100%;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+    transition: 2s ease-in-out;
+}
+
+
+/*SixthPage*/
+
+.SixthPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.Sentence6 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
+
+.Sentence6:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
+
+.bg6 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(/ArticleFéminisme/Page4.png);
+  opacity: 0.3;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.image6 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
+}
+
+.Sentence6:hover + .image6 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
+}
+
+
+/*SeventhPage*/
+
+.SeventhPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.Sentence7 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
+
+.Sentence7:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
+
+.bg7 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(/FestivalCourtMetrage/Affiche\ Off\ The\ Grid\ Festival.png);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.image7 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
+}
+
+.Sentence7:hover + .image7 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
+}
+
+
+/*EigthPage*/
+
+.EigthPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.Sentence8 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
+
+.Sentence8:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
+
+.bg8 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(/HomoSpacius/Mise\ en\ page\ HomoSpacius.png);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.image8 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
+}
+
+.Sentence8:hover + .image4 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
+}
+
 
 
 
@@ -422,6 +658,11 @@ body {
 .espace {
   margin-left: 20px;
 }
+
+.espacemini {
+  margin-left: 30px;
+}
+
 
 .active {
   color: white;
@@ -599,6 +840,32 @@ body {
    }
   }
 
+/*Notation*/
+
+.LittleFlex {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.InfoText {
+    color: white;
+    font-family: "Montserra", sans-serif;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    padding-left: 15px;
+}
+
+.LittleFlex img {
+  scale: 150%;
+}
+
+.indesign {
+  scale: 10%;
+
+}
+
 
 
 
@@ -612,6 +879,29 @@ body {
 
 
   @media (max-width: 1000px) {
+
+    .LittleFlex {
+      display: flex;
+      flex-direction: row;
+      opacity: 1;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    .LittleFlex img {
+      scale: 300%;
+    }
+    
+    .indesign {
+      scale: 20%;
+    
+    }
+
+    .espacemini {
+      margin-left: 80px;
+    }
+    
+
     .Arrowtext4 {
       position: fixed;
       z-index: 99;

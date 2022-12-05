@@ -655,6 +655,33 @@ body {
 
 
 
+  .LittleFlex {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.InfoText {
+    color: white;
+    font-family: "Montserra", sans-serif;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    padding-left: 15px;
+}
+
+.LittleFlex img {
+  scale: 150%;
+}
+
+.indesign {
+  scale: 10%;
+
+}
+
+
+
+
 
 
 
@@ -665,6 +692,27 @@ body {
 
 
   @media (max-width: 1000px) {
+
+    .LittleFlex {
+      display: flex;
+      flex-direction: row;
+      opacity: 1;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    .LittleFlex img {
+      scale: 300%;
+    }
+    
+    .indesign {
+      scale: 20%;
+    
+    }
+
+    .espacemini {
+      margin-left: 80px;
+    }
 
     .Arrowtext4 {
       position: fixed;
