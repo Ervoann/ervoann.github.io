@@ -1,20 +1,20 @@
-/*Typos*/
+  /*Typos*/
 
-@font-face {
+  @font-face {
     font-family: Ginger;
-    src: url("./src/Fonts/Ginger.ttf");
+    src: url("../../Fonts/Ginger.ttf");
   }
 
 @font-face {
     font-family: UncutBold;
-    src: url("./src/Fonts/Uncut-Sans-Bold.otf");
+    src: url("../../Fonts/Uncut-Sans-Bold.otf");
   }
 
 @font-face {
     font-family: UncutReg;
-    src: url("./src/Fonts/Uncut-Sans-Regular.otf");
+    src: url("../../Fonts/Uncut-Sans-Regular.otf");
   }
-
+  
 /*Initialisation*/
 
 * {
@@ -35,94 +35,79 @@ body {
 
 
 .Container {
-  
     width: 100%;
     height: 100%;
-
 }
 
 
-
-
-
-
-/*PremièrePage*/
+/*FirstPage*/
 
 .FirstPage {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  flex-direction: column;
-}
-
-.Sentence1 {
-  font-size: 3rem;
-  color: #ffff;
-  font-family: UncutReg;
-  text-align: center;
-  animation: FontResize 3s ease-out;
-}
-
-.NameSurname {
-  font-size: 6rem;
-  color: #ffff;
-  font-family: Ginger;
-  text-align: center;
-  animation: FontResize2 3s ease-out;
-}
-
-.Job {
-  font-size: 1.5rem;
-  color: #16db65;
-  font-family: UncutReg;
-  text-align: center;
-  animation: fade2 1s ease-out;
-}
-
-#Arrow {
-  width: 50px;
-  height: 70px;
-  animation-duration: .60s;
-  animation-name: clignoter;
-  animation-iteration-count: infinite;
-  transition: .30s ease-in-out;
-}
-
-          /*PremièrePageAnimations*/
-
-@keyframes clignoter {
- 0%   { opacity:1; }
- 40%   {opacity:0; }
- 100% { opacity:1; }
-}
-
-@keyframes FontResize {
-  0% {font-size: 4rem;}
-}
-
-@keyframes FontResize2 {
-  0% {font-size: 9rem;}
-}
-
-@keyframes fade2 {
-  0% {
-    filter:blur(15px);
-    opacity:0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    flex-direction: column;
   }
-  50% {
-    filter:blur(10px);
-    opacity:0.9;
+  
+  .Sentence1 {
+    font-size: 3rem;
+    color: #ffff;
+    font-family: UncutReg;
+    text-align: center;
+    transition: 2s ease-in-out;
+    z-index: 5;
   }
-  100% {
-    filter:blur(0px);
-    opacity:1;
-  }  
+
+  .NameSurname {
+    font-size: 6rem;
+    color: #ffff;
+    font-family: Ginger;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .Sentence1:hover {
+    filter: drop-shadow(0 0 0.75rem black);
+    transition: 2s ease-in-out;
+  }
+
+  .bg {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Img/VideoPreview/BackgroundGuinguetteVideo.PNG");
+    opacity: 0.3;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image {
+    pointer-events: none;
+      position: absolute;
+      height: 50vh;
+      max-height: 400px;
+    right:0;
+      opacity: 0;
+      transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+    z-index: 2;
+  }
+
+  .Sentence1:hover + .image {
+    opacity: 100%;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+    transition: 2s ease-in-out;
 }
 
-/*DeuxièmePage*/
+
+/*SecondPage*/
 
 .SecondPage {
   display: flex;
@@ -130,86 +115,56 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #000000;
   flex-direction: column;
 }
 
+.Sentence2 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
 
-/*DeuxièmePage-WhoAmIBox*/
+.Sentence2:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
 
-.WhoAmIBox {
-  width: 90vw;
+.bg2 {
+  position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-  margin-top: 50px;
-  opacity: 0;
-  animation:fade 400ms ease-in-out forwards;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Img/VideoPreview/BackgroundAnimationText.PNG");
+  opacity: 0.3;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image2 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
+}
+
+.Sentence2:hover + .image2 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
 }
 
 
-
-.WhoAmI {
-  color: white;
-  padding: 30px;
-  font-family: "Montserra", sans-serif;
-  font-size: 3rem;
-  word-spacing: normal;
-  animation:fade 400ms ease-in-out forwards;
-
-}
-
-.WhoAmIBold {
-  color: #16db65;
-  padding: 30px;
-  font-family: "Montserra", sans-serif;
-  font-weight: 500;
-  font-size: 3rem;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  animation:fade 400ms ease-in-out forwards;
-}
-
-.Blur:hover {
-  filter: blur(4px);
-}
-
-@keyframes fade {
-  0% {
-    top:10px;
-    left:10px;
-    filter:blur(15px);
-    opacity:0;
-  }
-  50% {
-    filter:blur(10px);
-    opacity:0.9;
-  }
-  100% {
-    top:0px;
-    left:0px;
-    filter:blur(0px);
-    opacity:1;
-  }  
-}
-
-/*DeuxièmePage-CardBox*/
-
-
-
-
-
-
-
-
-
-
-
-
-/*Troisième Page*/
+/*ThirdPage*/
 
 .ThirdPage {
   display: flex;
@@ -217,105 +172,55 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #000000;
   flex-direction: column;
 }
 
-/*TroisièmePage-SliderTextSettings*/
-
-.ArrowSliders {
-  display: flex;
-  justify-content: center;
-}
-
-.sliders.show {
-  opacity: 1;
-  transition: 3s;
-}
-
-.SlidersTitles {
+.Sentence3 {
+  font-size: 3rem;
+  color: #ffff;
   font-family: UncutReg;
-  font-size: 1.5rem;
   text-align: center;
-  color: white;
-  padding: 10px;
+  transition: 2s ease-in-out;
+  z-index: 5;
 }
 
-/*TroisièmePage-SliderText*/
-
-.wrapper, .wrapper2 {
-  max-width: 100vw;
-  overflow: hidden;
+.Sentence3:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
 }
 
-.TextWrapper {
+.bg3 {
+  position: absolute;
   display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 50vw;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Img/VideoPreview/BackgroundFanEdit.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 0;
 }
 
-.SubTextWrapper {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 30vw;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  padding-top: 80px;
+.image3 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
 }
 
-.marquee p, .marquee2 p {
-  display: inline-block;
-  font-family: Ginger;
-  color: white;
-  font-size: 6rem;
-}
-
-.marquee {
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: marquee 20s linear infinite;
-}
-
-.marquee2 {
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: marquee2 30s linear infinite;
-}
-
-/*TroisièmePage-SliderTextAnimations*/
-
-@keyframes marquee2 {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translate3d(-50%, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+.Sentence3:hover + .image3 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
 }
 
 
-
-
-
-/*Quatrième Page*/
+/*FourthPage*/
 
 .FourthPage {
   display: flex;
@@ -323,134 +228,138 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
+  background-color: #000000;
   flex-direction: column;
-  z-index: -1;
 }
 
-.laboite {
-  z-index: 1;
+.Sentence4 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
+
+.Sentence4:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
+
+.bg4 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Img/VideoPreview/BackgroundVizion.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.image4 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
+}
+
+.Sentence4:hover + .image4 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
+}
+
+
+/*FithPage*/
+
+.FithPage {
   display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
+  background-color: #000000;
   flex-direction: column;
 }
 
-.WhoAmIBox .word1:hover ~ .FourthPage{background: white;}
+.Sentence5 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
 
-.ProjectBox {
+.Sentence5:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
+
+.bg5 {
+  position: absolute;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  opacity: 1;
-  transition: 1s ease-in-out;
-}
-
-.CardBox {
-  margin-top: 35px;
-  width: 0vw;
-  display: flex;
-  justify-content: center;
-  transition: 1s ease-in-out;
-}
-
-.Card1 {
-  opacity: 1;
-  height: 200px;
-  width: 200px;
-  transition: 1s ease-in-out;
-  background: url("ArticleFéminisme/Page4.png");
-  background-size: 100%;
-  background-position: center;
-}
-
-.Card2 {
-  opacity: 1;
-  height: 200px;
-  width: 200px;
-  transition: 1s ease-in-out;
-  background: url("https://cdn.pixabay.com/photo/2016/11/19/09/45/man-1838330__480.jpg");
-  background-size: 280%;
-  background-position: center;
-  margin-left: 50px;
-}
-
-.Card3 {
-  opacity: 1;
-  height: 200px;
-  width: 200px;
-  transition: 1s ease-in-out;
-  background: url("ExpoMaisonSoustraire/Page1.png");
-  background-size: 100%;
-  background-position: center;
-  margin-left: 50px;
-}
-
-.Card4 {
-  opacity: 1;
-  height: 200px;
-  width: 200px;
-  transition: 1s ease-in-out;
-  background: url("https://cdn.pixabay.com/photo/2016/11/19/09/45/man-1838330__480.jpg");
-  background-size: 280%;
-  background-position: center;
-  margin-left: 50px;
-}
-
-
-.CardHover {
-  opacity: 0;
-  height: 200px;
-  width: 200px;
-  transition: 1s ease-in-out;
-  background: linear-gradient(to bottom, transparent 0%, black 100%);
-  opacity: 0;
-  display: flex;
-  align-items: flex-end;
-}
-
-.CardHover:hover {
-  opacity: 1;
-}
-
-.CardTitle {
-  color: white;
-  padding: 10px;
-  font-family: "Montserra", sans-serif;
-  font-size: 1.5rem;
-}
-
-
-
-.FifthPage {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-  font-family: Ginger;
-  flex-direction: row;
-  gap: 0;
-}
-
-.FithPageDivs {
-  font-size: 4rem;
+  width: 100%;
   height: 100%;
-  width: 16.6%;
-  background-color: #a32121;
-  margin:10px;
-  padding: 0;
+  background-image: url("../../Img/VideoPreview/BackgroundStoryT2o.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 0;
 }
 
-.FifthPageText {
-  margin: 0;
-  padding: 0;
-  
+.image5 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
 }
+
+.Sentence5:hover + .image5 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
+}
+
+
+
+  #Arrow {
+    width: 50px;
+    height: 70px;
+    animation-duration: .60s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: .30s ease-in-out;
+  }
+
+  #Arrow2 {
+    width: 50px;
+    height: 70px;
+  }
+
+
+  
+            /*PremièrePageAnimations*/
+  
+  @keyframes clignoter {
+   0%   { opacity:1; }
+   40%   {opacity:0; }
+   100% { opacity:1; }
+  }
+  
+
+
+
 
 
 
@@ -512,22 +421,6 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-.FourthPage {
-  font-family: Ginger; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  min-height: 100vh; 
-  overflow: hidden;
-}
-
-.Apps { position: relative;} 
-.Apps li { list-style: none; text-align: center; } 
-.Apps li a { color: #333; text-decoration: none; font-size: 3em; padding: 5px 20px; display: inline-flex;  transition: 0.5s; } 
-.Apps:hover li a { color: rgba(246, 246, 246, 0.503); } 
-.Apps li:hover a { color: #000; background: rgba(255,255,255,1); } 
-.Apps li a:before { content: ''; position: absolute; top: 50%; left: 40%; transform: translate(-50%,-50%); display: flex; justify-content: center; align-items: center; font-size: 5em; color: rgba(0,0,0,.1); border-radius: 50%; z-index: -1; opacity: 0; font-weight: 900; text-transform: uppercase; letter-spacing: 500px; transition: letter-spacing 0.5s,left 0.5s; } 
-.Apps li a:hover:before { content: attr(data-text); opacity: 0.3; color:#16db65; left: 50%; letter-spacing: 10px; width: 1800px; height: 1800px; } 
 
 
 
@@ -563,9 +456,35 @@ body {
   animation: 1s fadeIn ease forwards .5s;
 }
 
+.Arrowtext3 {
+	position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+	z-index: 98;
+  margin-top: 10px;
+  color: white;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards .5s;
+  font-family: Ginger;
+}
+
+.espace {
+  margin-left: 20px;
+}
+
+.active {
+  color: white;
+}
+
+
+
 .Arrowtext2 button {
   border: 0;
-  background-color: #000000;
+  background-color: transparent;
 }
 
 .Arrowtext2 img {
@@ -576,38 +495,6 @@ body {
 .Linkedin {
   margin-left: 10px;
 }
-
-
-.Arrowtext3 {
-  position: fixed;
-  z-index: 99;
-  width: 40px;
-  height: 50px;
-  right: 0;
-  bottom: 0;
-  margin-bottom: 30px;
-  margin-right: 15px;
-  color: white;
-  opacity: 0;
-  animation: 1s fadeIn ease forwards .5s;
-}
-
-.Arrowtext3 button {
-  border: 0;
-  background-color: transparent;
-}
-
-.Arrowtext3 p {
-  font-size: 1rem;
-  color: #ffff;
-  font-family: UncutReg;
-}
-.Arrowtext3 p:hover {
-  font-family: Ginger;
-}
-
-
-
 
 /* Menu*/
 .Arrowtext {
@@ -626,7 +513,7 @@ body {
 
 .Arrowtext button {
   border: 0;
-  background-color: #000000;
+  background-color: transparent;
 }
 
 .Arrowtext img {
@@ -636,6 +523,7 @@ body {
 
 .container {
   z-index: 99;
+  
 }
 
 .popover {
@@ -767,6 +655,33 @@ body {
 
 
 
+  .LittleFlex {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.InfoText {
+    color: white;
+    font-family: "Montserra", sans-serif;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    padding-left: 15px;
+}
+
+.LittleFlex img {
+  scale: 150%;
+}
+
+.indesign {
+  scale: 10%;
+
+}
+
+
+
+
 
 
 
@@ -778,7 +693,28 @@ body {
 
   @media (max-width: 1000px) {
 
-    .Arrowtext3 {
+    .LittleFlex {
+      display: flex;
+      flex-direction: row;
+      opacity: 1;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    .LittleFlex img {
+      scale: 300%;
+    }
+    
+    .indesign {
+      scale: 20%;
+    
+    }
+
+    .espacemini {
+      margin-left: 80px;
+    }
+
+    .Arrowtext4 {
       position: fixed;
       z-index: 99;
       width: 40px;
@@ -792,22 +728,18 @@ body {
       animation: 1s fadeIn ease forwards .5s;
     }
     
-    .Arrowtext3 button {
+    .Arrowtext4 button {
       border: 0;
       background-color: transparent;
     }
     
-    .Arrowtext3 p {
+    .Arrowtext4 p {
       font-size: 2rem;
       color: #ffff;
       font-family: UncutReg;
     }
-    .Arrowtext3 p:hover {
+    .Arrowtext4 p:hover {
       font-family: Ginger;
-    }
-
-    .FourthPage {
-      font-size: 3rem;
     }
 
     .marquee p, .marquee2 p {
@@ -816,7 +748,7 @@ body {
       color: white;
       font-size: 10rem;
     }
-
+  
     .circle {
       z-index: 100;
       position: fixed;
@@ -984,14 +916,34 @@ body {
  100% { opacity:1; }
 }
 
-@keyframes FontResize {
-  0% {font-size: 4rem;}
-}
 
-@keyframes FontResize2 {
-  0% {font-size: 15rem;}
-}
   }
 
-
+  .Arrowtext4 {
+    position: fixed;
+    z-index: 99;
+    width: 40px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    color: white;
+    opacity: 0;
+    animation: 1s fadeIn ease forwards .5s;
+  }
   
+  .Arrowtext4 button {
+    border: 0;
+    background-color: transparent;
+  }
+  
+  .Arrowtext4 p {
+    font-size: 1rem;
+    color: #ffff;
+    font-family: UncutReg;
+  }
+  .Arrowtext4 p:hover {
+    font-family: Ginger;
+  }
+
