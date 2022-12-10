@@ -5,14 +5,24 @@
     src: url("../../Fonts/Ginger.ttf");
   }
 
-@font-face {
-    font-family: UncutBold;
-    src: url("../../Fonts/Uncut-Sans-Bold.otf");
+  @font-face {
+      font-family: UncutBold;
+      src: url("../../Fonts/Uncut-Sans-Bold.otf");
+    }
+
+  @font-face {
+      font-family: UncutReg;
+      src: url("../../Fonts/Uncut-Sans-Regular.otf");
+    }
+
+  @font-face {
+    font-family: InterReg;
+    src: url("../../Fonts/Inter-Regular.ttf");
   }
 
-@font-face {
-    font-family: UncutReg;
-    src: url("../../Fonts/Uncut-Sans-Regular.otf");
+  @font-face {
+    font-family: InterBold;
+    src: url("../../Fonts/Inter-Bold.ttf");
   }
 
 /*Initialisation*/
@@ -82,11 +92,11 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    background-image: url("../../Img/Guinguette/5.jpg");
+    background-image: url("../../Img/SwipeCarbon/SwipeCarbonBg.jpg");
     opacity: 0.3;
     z-index: 0;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
   }
 
   .image {
@@ -138,12 +148,11 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url("../../Img/SoiréeLyon/8.jpg");
+  background-image: url("../../Img/MobillierCollectifDuVelay/MainPreview.jpg");
   opacity: 0.3;
   z-index: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .image2 {
@@ -195,7 +204,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url("../../Img/SoiréeDragLyon/18.jpg");
+  background-image: url("../../Img/ProjetFanny/Export.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.3;
@@ -251,11 +260,13 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-image: url("../../Img/SoiréeT2o/2.jpg");
+  background-image: url("../../Img/InfographieMacdo/PreviewBefore.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.3;
   z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image4 {
@@ -275,6 +286,242 @@ body {
   transition: 2s ease-in-out;
 }
 
+
+/*FithPage*/
+
+.FithPage {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    flex-direction: column;
+  }
+  
+  .Sentence5 {
+    font-size: 3rem;
+    color: #ffff;
+    font-family: UncutReg;
+    text-align: center;
+    transition: 2s ease-in-out;
+    z-index: 5;
+  }
+
+  .NameSurname {
+    font-size: 6rem;
+    color: #ffff;
+    font-family: Ginger;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .Sentence5:hover {
+    filter: drop-shadow(0 0 0.75rem black);
+    transition: 2s ease-in-out;
+  }
+
+  .bg5 {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Img/ExpoMaisonSoustraire/Page5.png");
+    opacity: 0.3;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image5 {
+    pointer-events: none;
+      position: absolute;
+      height: 50vh;
+      max-height: 400px;
+    right:0;
+      opacity: 0;
+      transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+    z-index: 2;
+  }
+
+  .Sentence5:hover + .image5 {
+    opacity: 100%;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+    transition: 2s ease-in-out;
+}
+
+
+/*SixthPage*/
+
+.SixthPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.Sentence6 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
+
+.Sentence6:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
+
+.bg6 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Img/ArticleFéminisme/Page4.png");
+  opacity: 0.3;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.image6 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
+}
+
+.Sentence6:hover + .image6 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
+}
+
+
+/*SeventhPage*/
+
+.SeventhPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.Sentence7 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
+
+.Sentence7:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
+
+.bg7 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Img/FestivalCourtMetrage/AfficheOffTheGridFestival.png");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.image7 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
+}
+
+.Sentence7:hover + .image7 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
+}
+
+
+/*EigthPage*/
+
+.EigthPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.Sentence8 {
+  font-size: 3rem;
+  color: #ffff;
+  font-family: UncutReg;
+  text-align: center;
+  transition: 2s ease-in-out;
+  z-index: 5;
+}
+
+.Sentence8:hover {
+  filter: drop-shadow(0 0 0.75rem black);
+  transition: 2s ease-in-out;
+}
+
+.bg8 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Img/HomoSpatius/HomoSpacius.png");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.image8 {
+  pointer-events: none;
+    position: absolute;
+    height: 50vh;
+    max-height: 400px;
+  right:0;
+    opacity: 0;
+    transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+  z-index: 2;
+}
+
+.Sentence8:hover + .image8 {
+  opacity: 100%;
+  transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+  transition: 2s ease-in-out;
+}
 
 
 
@@ -421,6 +668,11 @@ body {
 .espace {
   margin-left: 20px;
 }
+
+.espacemini {
+  margin-left: 30px;
+}
+
 
 .active {
   color: white;
@@ -598,36 +850,60 @@ body {
    }
   }
 
-  .Arrowtext4 {
-    position: fixed;
-    z-index: 99;
-    width: 40px;
-    height: 50px;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 30px;
-    margin-right: 15px;
+/*Notation*/
+
+.LittleFlex {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.InfoText {
     color: white;
-    opacity: 0;
-    animation: 1s fadeIn ease forwards .5s;
-  }
-  
-  .Arrowtext4 button {
-    border: 0;
-    background-color: transparent;
-  }
-  
-  .Arrowtext4 p {
-    font-size: 1rem;
-    color: #ffff;
-    font-family: UncutReg;
-  }
-  .Arrowtext4 p:hover {
-    font-family: Ginger;
-  }
+    font-family: "Montserra", sans-serif;
+    font-size: 1.5rem;
+    word-spacing: normal;
+    padding-left: 15px;
+}
+
+.LittleFlex img {
+  scale: 150%;
+}
+
+.indesign {
+  scale: 10%;
+
+}
 
 
+.Arrowtext4 {
+  position: fixed;
+  z-index: 99;
+  width: 40px;
+  height: 50px;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  color: white;
+  opacity: 0;
+  animation: 1s fadeIn ease forwards .5s;
+}
 
+.Arrowtext4 button {
+  border: 0;
+  background-color: transparent;
+}
+
+.Arrowtext4 p {
+  font-size: 1rem;
+  color: #ffff;
+  font-family: UncutReg;
+}
+.Arrowtext4 p:hover {
+  font-family: Ginger;
+}
 
 
 
@@ -644,6 +920,28 @@ body {
       width: 70px;
       height: 90px;
     }
+
+    .LittleFlex {
+      display: flex;
+      flex-direction: row;
+      opacity: 1;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    .LittleFlex img {
+      scale: 300%;
+    }
+    
+    .indesign {
+      scale: 20%;
+    
+    }
+
+    .espacemini {
+      margin-left: 80px;
+    }
+    
 
     .Arrowtext4 {
       position: fixed;
@@ -849,4 +1147,6 @@ body {
 
 
   }
+
+  
 

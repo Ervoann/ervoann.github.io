@@ -17,29 +17,14 @@
     src: url("../../Fonts/Uncut-Sans-Regular.otf");
   }
 
-  @font-face {
-    font-family: Cascadia;
-    src: url("../../Fonts/Cascadia.ttf");
+@font-face {
+    font-family: InterReg;
+    src: url("../../Fonts/Inter-Regular.ttf");
   }
 
-  @font-face {
-    font-family: Marianne;
-    src: url("../../Fonts/Marianne-Regular.otf");
-  }
-
-  @font-face {
-    font-family: Hell;
-    src: url("../../Fonts/Hell\ Finland.ttf");
-  }
-
-  @font-face {
-    font-family: Ruler Modern;
-    src: url("../../Font/Ruler\ Modern.ttf");
-  }
-
-  @font-face {
-    font-family: Abeat;
-    src: url("../../FontsabeatbyKaiRegular.otf");
+@font-face {
+    font-family: InterBold;
+    src: url("../../Fonts/Inter-Bold.ttf");
   }
 
 /*Initialisation*/
@@ -210,9 +195,9 @@ body {
     padding-left: 40px;
   }
 
-  .InfoTextAbeat {
+  .InfoTextInter {
     color: rgb(255, 255, 255);
-    font-family: Abeat;
+    font-family: InterReg;
     font-size: 1.5rem;
     word-spacing: normal;
     padding-top: 20px;
@@ -220,9 +205,9 @@ body {
 
   }
 
-  .InfoTextHell {
+  .InfoTextInter2 {
     color: rgb(255, 255, 255);
-    font-family: Hell;
+    font-family: InterBold;
     font-size: 1.5rem;
     word-spacing: normal;
     padding-top: 20px;
@@ -252,13 +237,13 @@ body {
   .Color {
     height: 50px;
     width: 50px;
-    background-color: #ffff;
+    background-color: #5D5FEF;
   }
 
   .Color2 {
     height: 50px;
     width: 50px;
-    background-color: #0000;
+    background-color: #73E593;
   }
 
   .ColorText {
@@ -273,7 +258,7 @@ body {
 
   .parallax {
     /* The image used */
-    background-image: url("../../Img/MobillierCollectifDuVelay/Preview_MCV.jpg");
+    background-image: url("../../Img/SwipeCarbon/MockupPreview.jpg");
     /* Full height */
     height: 600px;
     margin-top: 50px;
@@ -287,7 +272,7 @@ body {
 
   .parallax2 {
     /* The image used */
-    background-image: url("../../Img/MobillierCollectifDuVelay/Preview_MCV.jpg");
+    background-image: url("../../Img/SwipeCarbon/MockupPreview.jpg");
   
     /* Full height */
     height: 600px;
@@ -334,8 +319,8 @@ body {
   }
 
   .PagePdf {
-    width:533,4px;
-    height: 300px;
+    width: 259.5px;
+    height: 450px;
   }
 
   .SpaceLeft {
@@ -599,7 +584,6 @@ body {
    }
   }
 
-
   .Arrowtext4 {
     position: fixed;
     z-index: 99;
@@ -629,6 +613,7 @@ body {
   }
 
 
+
 /*Responsive*/
 
  @media (max-width: 1000px) {
@@ -636,10 +621,11 @@ body {
     width: 70px;
     height: 90px;
   }
-  
+
   .TopBar {
     margin-top: 50px;
    }
+    
   .Arrowtext4 {
     position: fixed;
     z-index: 99;
@@ -668,9 +654,10 @@ body {
     font-family: Ginger;
   }
 
+
     .PagePdf {
-      width: 266,7px;
-      height: 150px;
+      width: 206.5px;
+      height: 292px;
     }
 
     .circle {
