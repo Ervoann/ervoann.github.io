@@ -655,10 +655,10 @@ body {
   }
 
 
-    .PagePdf {
-      width: 206.5px;
-      height: 292px;
-    }
+  .PagePdf {
+    width: 259.5px;
+    height: 450px;
+  }
 
     .circle {
       z-index: 100;

@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: Ginger;
-  src: url(/Fonts/Ginger.ttf);
+  src: url("../../Fonts/Ginger.ttf");
 }
 
 @font-face {
   font-family: UncutBold;
-  src: url(/Fonts/Uncut-Sans-Bold.otf);
+  src: url("../../Fonts/Uncut-Sans-Bold.otf");
 }
 
 @font-face {
   font-family: UncutReg;
-  src: url(/Fonts/Uncut-Sans-Regular.otf);
+  src: url("../../Fonts/Uncut-Sans-Regular.otf");
 }
 
 /*Initialisation*/
