@@ -150,10 +150,9 @@
 
 /* Menu*/
 .Arrowtext {
-  width: 20px;
-  height: 20px;
   top: 0;
   margin-top: 0;
+  margin-right: 35px;
   color: white;
   opacity: 0;
   animation: 1s fadeIn ease forwards .5s;
@@ -327,10 +326,10 @@
   }
 
   .projetsTitre {
-    font-size: large;
+    font-size: 1.5rem;
   }
 
   .projetsInfos {
-    font-size: medium;
+    font-size: 1rem;
   }
 }
