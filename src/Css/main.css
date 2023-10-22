@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior:smooth;
+  box-sizing: border-box;
+  background-color: rgb(19, 19, 19);
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  justify-content: left;
+  z-index: 50;
+}
+
+.presentation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-evenly;
+  vertical-align: text-top;
+}
+
+.presentation div {
+  flex: 1;
+}
+
+.menu #ng-2 {
+  margin-left: 50px;
+}
+
+#ng-3 {
+  padding-left: 20px;
+}
+
+.projets {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.projets2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-evenly;
+}
+
+.projets div {
+  flex: 1;
+}
+
+.projets div div:hover {
+  cursor: pointer;
+}
+
+#my-div, #my-div2, #my-div3, #my-div4  {
+  background-color: #28282b;
+}
+
+
+.right {
+  width: 50%; 
+  margin-top: 2.5em;
+  margin-bottom: 20px;
+}
+
+.left1 {
+  width: 50%; 
+  margin-top: 2em; 
+  background-size:cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-image: url(/src/img/MiniaturesZiar/Thumbnail-Alexis.jpg);
+}
+
+.left2 {
+  width: 50%; 
+  margin-top: 2em; 
+  background-size:cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-image: url(/src/img/Kulturika/Totem-City.jpg);
+}
+
+.left3 {
+  width: 50%; 
+  margin-top: 2em; 
+  background-size:cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-image: url(/src/img/KickFlip/Billboard-Mockup-Realistic.jpg);
+}
+
+.left4 {
+  width: 50%; 
+  margin-top: 2em; 
+  background-size:cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-image: url(/src/img/Rodtchenko/ProjetAlexandreRodtchenko-9.png);
+}
+
+#gal-m {
+  display: none;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff0;
+  width: 2px;
+}
+
+@media (max-width: 1000px) {
+  .projets {
+      flex-direction: column;
+  }
+
+  .main {
+      flex-direction: column;
+  }
+
+  .right {
+      width: 100%;
+      margin-top: 0;
+  }
+
+  .left1, .left2, .left3, .left4{
+      width: 100%;
+      height: 250px;
+      top: 0;
+  }
+
+  #gal-m {
+      display: block;
+  }
+}
