@@ -1,12 +1,41 @@
+/* Couleurs */
+
+:root {
+  --Primary: #f5f5f5;
+  --Secondary: rgb(19, 19, 19);
+  --Tertiary: #28282b;
+  --Pick: #ff0;
+}
+
+
+/* Initialisation */
+
 * {
   padding: 0;
   margin: 0;
   scroll-behavior:smooth;
   box-sizing: border-box;
-  background-color: rgb(19, 19, 19);
+  background-color: var(--Secondary);
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 }
+
+.Primary {
+  color: var(--Primary);
+  text-decoration: none;
+  fill: var(--Primary);
+}
+
+.Pick {
+  fill: var(--Pick);
+  color: var(--Pick);
+}
+
+.Tertiary {
+  fill: var(--Tertiary);
+  color: var(--Tertiary);
+}
+
 .menu, .menu2, .menu3 {
   width: 100%;
   display: flex;
@@ -96,7 +125,7 @@
 }
 
 #my-div, #my-div2, #my-div3, #my-div4  {
-  background-color: #28282b;
+  background-color: var(--Tertiary);
 }
 
 .projetsTitre {
@@ -161,11 +190,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #000000;
+  background-color: var(--Secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ff0;
+  background-color: var(--Pick);
   width: 2px;
 }
 
@@ -175,14 +204,14 @@
   top: 0;
   margin-top: 0;
   margin-right: 45px;
-  color: white;
+  color: var(--Primary);
   opacity: 0;
   animation: 1s fadeIn ease forwards .5s;
 }
 
 .Arrowtext button {
   border: 0;
-  background-color: rgb(19, 19, 19);
+  background-color: var(--Secondary);
 }
 
 .Arrowtext img {
@@ -223,8 +252,8 @@
   position: relative;
   width: 0;
   height: 0;
-  color: #fff;
-  background-color: rgb(19, 19, 19);
+  color: var(--Primary);
+  background-color: var(--Secondary);
   animation: 1s grow ease forwards;
   text-align: center;
 }
@@ -236,7 +265,7 @@
 .nav_list a {
   text-decoration: none;
   font-size: 100px;
-  color: #fff;
+  color: var(--Primary);
 }
 
 .nav_list_item {
@@ -275,12 +304,41 @@
   font-size: 150px;
   align-items: center;
   justify-content: center;
-  background-color: rgb(19, 19, 19);
-  color: #fff;
+  background-color: var(--Secondary);
+  color: var(--Primary);
   content: "×";
   cursor: pointer;
   opacity: 0; 
   animation: 1s fadeIn ease forwards .5s;
+}
+
+.SwitchMode {
+  top: 30px;
+  right: 0;
+  margin-top: 0;
+  margin-right: 50px;
+  color: var(--Primary);
+  position: fixed;
+}
+
+.BurgerMenu {
+  top: 10px;
+  right: 0;
+  margin-top: 0;
+  margin-right: 35px;
+  color: var(--Primary);
+  position: fixed;
+}
+
+.SwitchModeButton {
+  color: var(--Primary);
+  fill: var(--Primary);
+}
+
+
+.SwitchMode:hover .SwitchModeButton {
+  color: var(--Pick);
+  fill: var(--Pick);
 }
 
 @keyframes grow {
@@ -308,6 +366,8 @@
     opacity: 0;
    }
   }
+
+
 
 @media (max-width: 1000px) {
   .projets {
