@@ -82,6 +82,10 @@
   padding-left: 20px;
 }
 
+#ng-3-2 {
+  margin-left: 40px;
+}
+
 .RSN {
   width: 20px;
   height: 20px;
@@ -130,10 +134,12 @@
 
 .projetsTitre {
   font-size: medium;
+  text-align: justify;
 }
 
 .projetsInfos {
   font-size: small;
+  text-align: justify;
 }
 
 
@@ -158,7 +164,7 @@
   background-size:cover;
   background-repeat: no-repeat; 
   background-position: center;
-  background-image: url(./src/Img/img/Kulturika/Totem-City.jpg);
+  background-image: url(./src/Img//Kulturika/Totem-City.jpg);
 }
 
 .left3 {
@@ -297,7 +303,7 @@
   top: 0;
   width: 50px;
   height: 50px;
-  margin: 20px 50px 0 0;
+  margin: 35px 50px 0 0;
   position: absolute;
   display: flex;
   z-index: 1;
@@ -421,13 +427,15 @@
 
   .right {
       width: 100%;
-      margin-top: 0;
+      margin-top: 8rem;
   }
 
   .left1, .left2, .left3, .left4{
       width: 100%;
       height: 250px;
       top: 0;
+      display: none;
+      opacity: 0;
   }
 
   #gal-m {
@@ -440,5 +448,17 @@
 
   .projetsInfos {
     font-size: 1.5rem;
+  }
+
+  #ng-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+  }
+
+  #ng-3-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
   }
 }

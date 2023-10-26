@@ -405,11 +405,6 @@ const div = document.querySelector('#my-div');
 const div2 = document.querySelector('#my-div2');
 const div3 = document.querySelector('#my-div3');
 const div4 = document.querySelector('#my-div4');
-const mode = document.querySelector('#SwitchMode');
-const mode2 = document.querySelector('#SwitchMode2');
-
-var current = 0;
-
 
 // Add a click event listener to the div.
 div.addEventListener('click', function() {
@@ -434,48 +429,8 @@ div4.addEventListener('click', function() {
   // Open the page in the current tab.
   window.open('./src/Pages/AlexandreRodtchenko.html', '_self');
 });
-
-// Add a click event listener to the div.
-mode.addEventListener('click', function() {
-  if (current == 0) {
-  // Open the page in the current tab.
-  document.documentElement.style.setProperty('--Primary', 'rgb(19, 19, 19)');
-  document.documentElement.style.setProperty('--Secondary', '#f5f5f5');
-  document.documentElement.style.setProperty('--Tertiary', '#ececec');
-  document.documentElement.style.setProperty('--Pick', '#0313ff');
-  current = 1;
-
-}
-  else {
-  // Open the page in the current tab.
-  document.documentElement.style.setProperty('--Primary', '#f5f5f5');
-  document.documentElement.style.setProperty('--Secondary', 'rgb(19, 19, 19)');
-  document.documentElement.style.setProperty('--Tertiary', '#28282b');
-  document.documentElement.style.setProperty('--Pick', '#ff0');
-  current = 0;
-}
-});
-
-// Add a click event listener to the div.
-mode2.addEventListener('click', function() {
-  if (current == 0) {
-  // Open the page in the current tab.
-  document.documentElement.style.setProperty('--Primary', 'rgb(19, 19, 19)');
-  document.documentElement.style.setProperty('--Secondary', '#f5f5f5');
-  document.documentElement.style.setProperty('--Tertiary', '#ececec');
-  document.documentElement.style.setProperty('--Pick', '#0313ff');
-  current = 1;
-
-}
-  else {
-  // Open the page in the current tab.
-  document.documentElement.style.setProperty('--Primary', '#f5f5f5');
-  document.documentElement.style.setProperty('--Secondary', 'rgb(19, 19, 19)');
-  document.documentElement.style.setProperty('--Tertiary', '#28282b');
-  document.documentElement.style.setProperty('--Pick', '#ff0');
-  current = 0;
-}
-});
 </script>
+<script src="../../SwitchMode.js"></script>
+
 </body>
 </html>
