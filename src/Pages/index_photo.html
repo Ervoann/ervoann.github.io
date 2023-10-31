@@ -270,7 +270,7 @@
     <div id="my-div3" style="display: flex; flex-direction: column; padding-left: 20px; padding-right: 20px; padding-top: 50px; padding-bottom: 30px;">
       <div style="width: 100%; height: 50rem; background-image: url(../Img/Guinguette/ParalaxCorver_2.jpg); background-repeat: no-repeat; background-size: cover; margin-bottom: 5px; background-position-y: center"><div style=" height: 300px; position: absolute;"></div><div style="height: 200px; opacity: 0; @media (max-width: 1000px) {height: 150px;}"></div></div>
       <p id="my-div3" class="projetsTitre Primary" style="text-decoration: none;">[Guinguette Drag-Queen]</p>
-      <p id="my-div3" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">Association Vertmines</p>
+      <p id="my-div3" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">Collectif Vertmines</p>
       <p id="my-div3" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">fev-2023</p>
     </div>
 </div>
@@ -283,11 +283,11 @@
     <p id="my-div4" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">jui-2023</p>
   </div>
 
-  <div id="my-div" style="display: flex; flex-direction: column; padding-left: 20px; padding-right: 20px; padding-top: 50px; padding-bottom: 30px;">
+  <div id="my-div5" style="display: flex; flex-direction: column; padding-left: 20px; padding-right: 20px; padding-top: 50px; padding-bottom: 30px;">
     <div style="width: 100%; height: 50rem; background-image: url(../Img/AfterPrideClapier/Preview.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; margin-bottom: 5px;"><div style="height: 200px; opacity: 0; @media (max-width: 1000px) {height: 150px;}"></div></div>
-    <p id="my-div" class="projetsTitre Primary" style="text-decoration: none;">[After Pride | Clapier]</p>
-    <p id="my-div" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">Soirée techno au Clapier</p>
-    <p id="my-div" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">avr-2023</p>
+    <p id="my-div5" class="projetsTitre Primary" style="text-decoration: none;">[After Pride | Clapier]</p>
+    <p id="my-div5" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">Soirée techno au Clapier</p>
+    <p id="my-div5" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">avr-2023</p>
   </div>
 
   <!-- <div id="my-div" style="display: flex; flex-direction: column; padding-left: 20px; padding-right: 20px; padding-top: 50px; padding-bottom: 30px;">
@@ -374,17 +374,38 @@
   // Get the div element.
 const div = document.querySelector('#my-div');
 const div2 = document.querySelector('#my-div2');
+const div3 = document.querySelector('#my-div3');
+const div4 = document.querySelector('#my-div4');
+const div5 = document.querySelector('#my-div5');
 
 // Add a click event listener to the div.
 div.addEventListener('click', function() {
   // Open the page in the current tab.
-  window.open('./src/Pages/MiniaturesYoutubeZiar.html', '_self');
+  window.open('./T2OClapier.html', '_self');
 });
 
 // Add a click event listener to the div.
 div2.addEventListener('click', function() {
   // Open the page in the current tab.
-  window.open('./src/Pages/Kulturika.html', '_self');
+  window.open('./T2O2088.html', '_self');
+});
+
+// Add a click event listener to the div.
+div3.addEventListener('click', function() {
+  // Open the page in the current tab.
+  window.open('./Guingette.html', '_self');
+});
+
+// Add a click event listener to the div.
+div4.addEventListener('click', function() {
+  // Open the page in the current tab.
+  window.open('./JustTheTip.html', '_self');
+});
+
+// Add a click event listener to the div.
+div5.addEventListener('click', function() {
+  // Open the page in the current tab.
+  window.open('./AfterPrideClapier.html', '_self');
 });
 
 </script>
