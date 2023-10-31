@@ -189,7 +189,7 @@
   background-size:cover;
   background-repeat: no-repeat; 
   background-position: center;
-  background-image: url(../Img/SoiréeT20/2.jpg);
+  background-image: url(../Img/SoiréeT2o/2.jpg);
 }
 
 .left9 {
@@ -514,6 +514,12 @@
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 0px;
+  }
+
+  #ng-3-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
   }
 
   .presentation {
