@@ -3,13 +3,9 @@ const BoiteProjet = document.querySelector('#LaBoiteProjet');
 
 // Déclaration d'un tableau contenant les informations des projets.
 var Projets = [
-  ['./src/Img/MiniaturesZiar/IpadDisplay.jpg','[Miniatures Ziar]','Illustrator / PHOTOSHOP','jui-2023','MiniaturesYoutubeZiar','./src/Pages/MiniaturesYoutubeZiar.html'],
-  ['./src/Img/Kulturika/Totem-City.jpg','[Projet affiches Kulturika]','INDESIGN / PHOTOSHOP / ILLUSTRATOR','mar-2023','Kulturika','./src/Pages/Kulturika.html'],
-  ['./src/Img/KickFlip/Billboard-Mockup-Realistic.jpg','[Projet KickFlip]','ILLUSTRATOR / PHOTOSHOP','fev-2023','KickFlip','./src/Pages/KickFlip.html'],
-  ['./src/Img/Rodtchenko/Magazine.jpg','[Recherches sur alexandre rodtchenko]','ILLUSTRATOR / PHOTOSHOP / indesign','mar-2023','AlexandreRodtchenko','./src/Pages/AlexandreRodtchenko.html'],
-  ['./src/Img/MaisonSoustraire/MagazineMockup.jpg','[Analyse exposition maison soustraire]','ILLUSTRATOR / PHOTOSHOP / Indesign','avr-2023','MaisonSoustraire','./src/Pages/MaisonSoustraire.html'],
-  ['./src/Img/TMF/Devanture.jpg','[Identité des Transports Mazenod Florian]','Illustrator / Photoshop / Figma','mai-2023','TMF','./src/Pages/TMF.html'],
-  ['./src/Img/EspaceTestEnArchipel/Cover.jpg','[Espace-test en archipel]','Photoshop / indesign / illustrator / figma','JAN-2023','EspaceTest','./src/Pages/EspaceTest.html']
+  ['../img/HEF-ActionnariatSalarié/TableauDeBord.jpg','[HEF Actionnariat Salarié]','Figma','avr-2023','HEF','./HEF.html'],
+  ['../img/ConcertApp/Cover.jpg','[Projet application ConcertApp]','Figma','dec-2022','ConcertApp','./ConcertApp.html'],
+  ['../img/SwipeCarbon/MockupPreview.jpg','[Application SwipeCarbon]','Figma','jan-2022','SwipeCarbon','./SwipeCarbon.html']
 ];
 
 // Crée une fonction pour créer une nouvelle div de projet si nécessaire.
@@ -133,11 +129,6 @@ for (let i = 0; i < Projets.length; i += 3) {
 // Sélectionne les divs avec les id "my-div0" à "my-div4".
 const LeLien = document.querySelector('#my-div0');
 const LeLien1 = document.querySelector('#my-div1');
-const LeLien2 = document.querySelector('#my-div2');
-const LeLien3 = document.querySelector('#my-div3');
-const LeLien4 = document.querySelector('#my-div4');
-const LeLien5 = document.querySelector('#my-div5');
-const LeLien6 = document.querySelector('#my-div6');
 
 // Ajoute un écouteur d'événements "click" à chaque div.
 LeLien.addEventListener('click', function() {
@@ -148,24 +139,3 @@ LeLien.addEventListener('click', function() {
 LeLien1.addEventListener('click', function() {
   window.open(Projets[1][5], '_self');
 });
-
-LeLien2.addEventListener('click', function() {
-  window.open(Projets[2][5], '_self');
-});
-
-LeLien3.addEventListener('click', function() {
-  window.open(Projets[3][5], '_self');
-});
-
-LeLien4.addEventListener('click', function() {
-  window.open(Projets[4][5], '_self');
-});
-
-LeLien5.addEventListener('click', function() {
-  window.open(Projets[5][5], '_self');
-});
-
-LeLien6.addEventListener('click', function() {
-  window.open(Projets[6][5], '_self');
-});
-

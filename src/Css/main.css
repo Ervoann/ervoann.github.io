@@ -465,12 +465,46 @@
   background-image: url(../Img/AfterPrideClapier/2.jpg);
 }
 
+.left13 {
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
+  background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/HEF-ActionnariatSalarié/cover.jpg);
+}
+
+
+
 
 /* Galerie */
 
 #gal-m {
   /* Affichage en bloc */
   display: block;
+}
+
+#gal-m2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gal-m2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Scrollbar */
@@ -957,10 +991,22 @@
 
   /* Galerie */
 
-  #gal-m {
-    /* Affichage : en bloc */
-    display: block;
+  /* #gal-m2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 50px ;
+    padding-right: 50px ;
   }
+  
+  .gal-m2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } */
+
+  
 
   /* Titre des projets */
 
