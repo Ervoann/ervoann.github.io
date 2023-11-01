@@ -1,535 +1,1057 @@
 /* Couleurs */
 
 :root {
+  /* Définition des variables de couleur */
   --Primary: #f5f5f5;
   --Secondary: rgb(19, 19, 19);
   --Tertiary: #28282b;
   --Pick: #ff0;
 }
 
-
 /* Initialisation */
 
+/* Remise à zéro des marges et paddings */
 * {
   padding: 0;
   margin: 0;
-  scroll-behavior:smooth;
+}
+
+/* Comportement de défilement fluide */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Box-sizing border-box pour tous les éléments */
+* {
   box-sizing: border-box;
+}
+
+/* Couleur de fond principale */
+* {
   background-color: var(--Secondary);
+}
+
+/* Police de caractères principale */
+* {
   font-family: 'Space Mono', monospace;
   text-transform: uppercase;
 }
 
+/* Classe pour les éléments de couleur primaire */
 .Primary {
   color: var(--Primary);
   text-decoration: none;
   fill: var(--Primary);
 }
 
+/* Classe pour les éléments de couleur Pick */
 .Pick {
   fill: var(--Pick);
   color: var(--Pick);
 }
 
+/* Classe pour les éléments de couleur tertiaire */
 .Tertiary {
   fill: var(--Tertiary);
   color: var(--Tertiary);
 }
 
+/* Menu principal */
+
 .menu, .menu2, .menu3 {
+  /* Largeur 100% */
   width: 100%;
+
+  /* Affichage en ligne */
   display: flex;
+
+  /* Direction de la ligne : row */
   flex-direction: row;
+
+  /* Padding supérieur et inférieur */
   padding-top: 20px;
   padding-bottom: 20px;
+
+  /* Padding gauche */
   padding-left: 50px;
+
+  /* Justifier le contenu à gauche */
   justify-content: left;
+
+  /* Z-index pour que le menu soit au-dessus des autres éléments */
   z-index: 50;
 }
 
+/* Masquer le deuxième menu par défaut */
 .menu2 {
   display: none;
 }
 
+/* Style du titre du troisième menu */
 .menu3titre {
   font-size: large;
 }
 
+/* Style du sous-titre du troisième menu */
 .menu3soustitre {
   font-size: medium;
 }
 
+/* Section de présentation */
+
 .presentation {
+  /* Largeur 100% */
   width: 100%;
+
+  /* Affichage en ligne */
   display: flex;
+
+  /* Direction de la ligne : row */
   flex-direction: row;
+
+  /* Marge supérieure */
   margin-top: 8rem;
+
+  /* Padding gauche et droit */
   padding-left: 30px;
   padding-right: 50px;
+
+  /* Alignement vertical : text-top */
   vertical-align: text-top;
+
+  /* Gap entre les éléments */
   gap: 150px;
 }
 
-
+/* Style des deuxième et troisième menus */
 
 .menu #ng-2, .menu3 #ng-2 {
+  /* Marge gauche */
   margin-left: 50px;
 }
 
+/* Style de l'élément #ng-3 */
 #ng-3 {
+  /* Padding gauche */
   padding-left: 20px;
 }
 
+/* Style de l'élément #ng-3-2 */
 #ng-3-2 {
+  /* Marge gauche */
   margin-left: 40px;
 }
 
+/* Style des icônes RSN */
 .RSN {
+  /* Largeur et hauteur */
   width: 20px;
   height: 20px;
 }
 
+/* Style des icônes RSN du troisième menu */
 .menu3 #ng-2 .svg-icon {
+  /* Largeur et hauteur */
   width: 15px;
   height: 15px;
 }
 
+/* Style du troisième menu */
 .menu3 #ng-2{
+  /* Direction de la ligne : column */
   flex-direction: column;
 }
 
+/* Section des projets */
+
 .projets {
+  /* Largeur 100% */
   width: 100%;
+
+  /* Affichage en ligne */
   display: flex;
+
+  /* Direction de la ligne : row */
   flex-direction: row;
+
+  /* Marge supérieure */
   margin-top: 10px;
+
+  /* Padding gauche et droit */
   padding-left: 50px;
   padding-right: 50px;
+
+  /* Justifier le contenu de manière uniforme */
   justify-content: space-evenly;
+
+  /* Gap entre les éléments */
   gap: 10px;
 }
 
+/* Section des projets 2 */
+
 .projets2 {
+  /* Largeur 100% */
   width: 100%;
+
+  /* Affichage en ligne */
   display: flex;
+
+  /* Direction de la ligne : row */
   flex-direction: row;
+
+  /* Padding gauche et droit */
   padding-left: 50px;
   padding-right: 50px;
+
+  /* Justifier le contenu de manière uniforme */
   justify-content: space-evenly;
 }
 
+/* Divs des projets */
+
 .projets div {
+  /* Flex: 1 pour que les divs prennent toute la largeur disponible */
   flex: 1;
 }
 
+/* Divs des projets au hover */
+
 .projets div div:hover {
+  /* Curseur pointer */
   cursor: pointer;
 }
 
-#my-div, #my-div2, #my-div3, #my-div4, #my-div5  {
+/* Couleurs des divs des projets */
+
+#my-div0, #my-div, #my-div1, #my-div2, #my-div3, #my-div4, #my-div5, #my-div6, #Reco, #Reco2 {
   background-color: var(--Tertiary);
 }
 
+/* Classe Bigger */
+
+.Bigger {
+  /* Hauteur */
+  height: 200px;
+
+  /* Opacité */
+  opacity: 0;
+
+  /* Media query pour réduire la hauteur sur les écrans inférieurs à 1000px */
+  @media (max-width: 1000px) {
+    height: 150px;
+  }
+}
+
+/* Classe Reco */
+
+#Reco, #Reco2 {
+  /* Curseur pointer */
+  cursor: pointer;
+}
+
+/* Classe projetsTitre */
+
 .projetsTitre {
+  /* Taille de la police */
   font-size: medium;
+
+  /* Alignement du texte */
   text-align: justify;
 }
+
+/* Classe projetsInfos */
 
 .projetsInfos {
+  /* Taille de la police */
   font-size: small;
+
+  /* Alignement du texte */
   text-align: justify;
 }
 
+/* Classe right */
 
 .right {
-  width: 50%; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
   margin-top: 2.5em;
+
+  /* Marge inférieure */
   margin-bottom: 20px;
 }
 
+/* Images de gauche */
+
 .left1 {
-  width: 50%; 
-  margin-top: 2em; 
-  background-size:cover;
-  background-repeat: no-repeat; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
   background-position: center;
+
+  /* Chemin de l'image */
   background-image: url(../Img/MiniaturesZiar/Thumbnail-Alexis.jpg);
 }
 
 .left2 {
-  width: 50%; 
-  margin-top: 2em; 
-  background-size:cover;
-  background-repeat: no-repeat; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
   background-position: center;
+
+  /* Chemin de l'image */
   background-image: url(../Img//Kulturika/Totem-City.jpg);
 }
 
 .left3 {
-  width: 50%; 
-  margin-top: 2em; 
-  background-size:cover;
-  background-repeat: no-repeat; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
   background-position: center;
+
+  /* Chemin de l'image */
   background-image: url(..//Img/KickFlip/Billboard-Mockup-Realistic.jpg);
 }
 
 .left4 {
-  width: 50%; 
-  margin-top: 2em; 
-  background-size:cover;
-  background-repeat: no-repeat; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
   background-position: center;
+
+  /* Chemin de l'image */
   background-image: url(./src/Img/Rodtchenko/ProjetAlexandreRodtchenko-9.png);
 }
 
 .left8 {
-  width: 50%; 
-  margin-top: 2em; 
-  background-size:cover;
-  background-repeat: no-repeat; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
   background-position: center;
+
+  /* Chemin de l'image */
   background-image: url(../Img/SoiréeT2o/2.jpg);
 }
 
 .left9 {
-  width: 50%; 
-  margin-top: 2em; 
-  background-size:cover;
-  background-repeat: no-repeat; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
   background-position: center;
+
+  /* Chemin de l'image */
   background-image: url(../Img/T2o2088/2.jpg);
 }
 
 .left10 {
-  width: 50%; 
-  margin-top: 2em; 
-  background-size:cover;
-  background-repeat: no-repeat; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
   background-position: center;
+
+  /* Chemin de l'image */
   background-image: url(../Img/Guinguette/2.jpg);
 }
 
 .left11 {
-  width: 50%; 
-  margin-top: 2em; 
-  background-size:cover;
-  background-repeat: no-repeat; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
   background-position: center;
+
+  /* Chemin de l'image */
   background-image: url(../Img/JustTheTipBrussels/2.jpg);
 }
 
 .left12 {
-  width: 50%; 
-  margin-top: 2em; 
-  background-size:cover;
-  background-repeat: no-repeat; 
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
   background-position: center;
+
+  /* Chemin de l'image */
   background-image: url(../Img/AfterPrideClapier/2.jpg);
 }
 
 
+/* Galerie */
+
 #gal-m {
+  /* Affichage en bloc */
   display: block;
 }
 
-
+/* Scrollbar */
 
 ::-webkit-scrollbar {
+  /* Largeur de la scrollbar */
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
+  /* Couleur de fond de la scrollbar */
   background-color: var(--Secondary);
 }
 
 ::-webkit-scrollbar-thumb {
+  /* Couleur de la poignée de la scrollbar */
   background-color: var(--Pick);
+
+  /* Largeur de la poignée de la scrollbar */
   width: 2px;
 }
 
+/* Menu */
 
-/* Menu*/
 .Arrowtext {
+  /* Positionnement en haut de la page */
   top: 0;
+
+  /* Marge supérieure */
   margin-top: 0;
+
+  /* Marge droite */
   margin-right: 45px;
+
+  /* Couleur */
   color: var(--Primary);
+
+  /* Opacité */
   opacity: 0;
+
+  /* Animation d'apparition progressive */
   animation: 1s fadeIn ease forwards .5s;
 }
 
 .Arrowtext button {
+  /* Pas de bordure */
   border: 0;
+
+  /* Couleur de fond */
   background-color: var(--Secondary);
 }
 
 .Arrowtext img {
+  /* Largeur */
   width: 20px;
+
+  /* Hauteur */
   height: 20px;
 }
 
 .container {
+  /* Indice de superposition */
   z-index: 99;
 }
 
 .popover {
-  
-   display: none;
-   box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+  /* Affichage par défaut */
+  display: none;
+
+  /* Ombre */
+  box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
 }
 
 .popover:target {
+  /* Positionnement absolu */
   position: absolute;
+
+  /* Droite */
   right: 0;
+
+  /* Haut */
   top: 0;
+
+  /* Largeur */
   width: 100%;
+
+  /* Hauteur */
   height: 100%;
+
+  /* Affichage en flexbox */
   display: flex;
+
+  /* Alignement des éléments au centre */
   align-items: center;
   justify-content: center;
 }
 
 .popover .Arrowtext::after {
+  /* Opacité */
   opacity: 0;
 }
 
 .popover .content {
+  /* Indice de superposition */
   z-index: 99;
+
+  /* Affichage en flexbox */
   display: flex;
+
+  /* Alignement des éléments au centre */
   align-items: center;
   justify-content: center;
+
+  /* Position relative */
   position: relative;
+
+  /* Largeur */
   width: 0;
+
+  /* Hauteur */
   height: 0;
+
+  /* Couleur */
   color: var(--Primary);
+
+  /* Couleur de fond */
   background-color: var(--Secondary);
+
+  /* Animation d'apparition progressive */
   animation: 1s grow ease forwards;
+
+  /* Alignement du texte au centre */
   text-align: center;
 }
 
-.nav_list  {
+.nav_list {
+  /* Pas de style de liste */
   list-style-type: none;
 }
 
 .nav_list a {
+  /* Pas de décoration de texte */
   text-decoration: none;
+
+  /* Taille de la police */
   font-size: 100px;
+
+  /* Couleur */
   color: var(--Primary);
 }
 
 .nav_list_item {
+  /* Hauteur */
   height: 100%;
+
+  /* Masquage du contenu */
   overflow: hidden;
 }
 
 .nav_list li {
+  /* Padding haut et bas */
   padding: 15px 0;
+
+  /* Transformation du texte en majuscules */
   text-transform: uppercase;
+
+  /* Transformation de la position du texte */
   transform: translateY(200px);
+
+  /* Opacité */
   opacity: 0;
+
+  /* Animation d'apparition progressive */
   animation: 2s slideUp ease forwards .5s;
+
+  /* Position relative */
   position: relative;
+
+  /* Police de caractères */
   font-family: Ginger;
+
+  /* Alignement du texte à gauche */
   text-align: left;
 }
 
 
 
+/* Popover */
+
 .popover p {
+  /* Padding haut et bas */
   padding: 50px;
+
+  /* Opacité */
   opacity: 0;
+
+  /* Animation d'apparition progressive */
   animation: 1s fadeIn ease forwards 1s;
 }
 
 .popover .close::after {
+  /* Droite */
   right: 0;
+
+  /* Haut */
   top: 0;
+
+  /* Largeur */
   width: 50px;
+
+  /* Hauteur */
   height: 50px;
+
+  /* Marge */
   margin: 35px 50px 0 0;
+
+  /* Positionnement absolu */
   position: absolute;
+
+  /* Affichage en flexbox */
   display: flex;
+
+  /* Indice de superposition */
   z-index: 1;
+
+  /* Taille de la police */
   font-size: 150px;
+
+  /* Alignement des éléments au centre */
   align-items: center;
   justify-content: center;
+
+  /* Couleur de fond */
   background-color: var(--Secondary);
+
+  /* Couleur */
   color: var(--Primary);
+
+  /* Contenu */
   content: "×";
+
+  /* Curseur */
   cursor: pointer;
-  opacity: 0; 
+
+  /* Opacité */
+  opacity: 0;
+
+  /* Animation d'apparition progressive */
   animation: 1s fadeIn ease forwards .5s;
 }
 
+/* Modes */
+
 .SwitchMode {
+  /* Positionnement en haut de la page */
   top: 30px;
+
+  /* Droite */
   right: 0;
+
+  /* Marge supérieure */
   margin-top: 0;
+
+  /* Marge droite */
   margin-right: 50px;
+
+  /* Couleur */
   color: var(--Primary);
+
+  /* Positionnement fixe */
   position: fixed;
 }
 
 .BurgerMenu {
+  /* Positionnement en haut de la page */
   top: 10px;
+
+  /* Droite */
   right: 0;
+
+  /* Marge supérieure */
   margin-top: 0;
+
+  /* Marge droite */
   margin-right: 35px;
+
+  /* Couleur */
   color: var(--Primary);
+
+  /* Positionnement fixe */
   position: fixed;
 }
 
 .SwitchModeButton {
+  /* Couleur */
   color: var(--Primary);
+
+  /* Couleur de remplissage */
   fill: var(--Primary);
 }
 
-
 .SwitchMode:hover .SwitchModeButton {
+  /* Couleur */
   color: var(--Pick);
+
+  /* Couleur de remplissage */
   fill: var(--Pick);
 }
 
+/* Animations */
+
 @keyframes grow {
   100% {
+    /* Hauteur */
     height: 100%;
+
+    /* Largeur */
     width: 100%;
- }
+  }
 }
 
 @keyframes fadeIn {
-100% {
-  opacity: 1;
- }
+  100% {
+    /* Opacité */
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
   100% {
+    /* Transformation de la position du texte */
     transform: translateY(0);
+
+    /* Opacité */
     opacity: 1;
   }
 }
 
 @keyframes fadeOut {
   100% {
+    /* Opacité */
     opacity: 0;
-   }
   }
+}
+
+/* Images */
 
 .Image:hover {
+  /* Opacité */
   opacity: 0.5;
+
+  /* Curseur */
   cursor: pointer;
+
+  /* Transition */
   transition: 0.8s ease-in-out;
-  
 }
 
 
+/* Media query pour les écrans de moins de 1000px */
+
 @media (max-width: 1000px) {
+
+  /* Section des projets */
+
   .projets {
-      flex-direction: column;
+    /* Direction de la ligne : colonne */
+    flex-direction: column;
   }
+
+  /* Section principale */
 
   .main {
-      flex-direction: column;
+    /* Direction de la ligne : colonne */
+    flex-direction: column;
   }
 
+  /* Menu principal */
+
   .menu {
+    /* Affichage : aucun */
     display: none;
   }
 
+  /* Deuxième menu */
+
   .menu2 {
+    /* Affichage : en ligne */
     display: flex;
+
+    /* Justifier le contenu de manière uniforme */
     justify-content: space-between;
+
+    /* Padding droit */
     padding-right: 20px;
   }
 
+  /* Troisième menu */
+
   .menu3 {
+    /* Affichage : en ligne */
     display: flex;
+
+    /* Positionnement en haut de la page */
     top: 0;
   }
 
+  /* Titre du troisième menu */
+
   .menu3titre {
+    /* Taille de la police */
     font-size: 2.5rem;
   }
 
+  /* Sous-titre du troisième menu */
+
   .menu3soustitre {
+    /* Taille de la police */
     font-size: 2rem;
   }
 
+  /* Icônes RSN du troisième menu */
+
   .menu3 #ng-2 .svg-icon {
+    /* Largeur */
     width: 25px;
+
+    /* Hauteur */
     height: 25px;
   }
 
+  /* Troisième menu */
+
   .menu3 #ng-2 {
+    /* Direction de la ligne : row */
     flex-direction: row;
   }
 
+  /* Icônes RSN */
+
   .RSN {
+    /* Largeur */
     width: 35px;
+
+    /* Hauteur */
     height: 35px;
   }
 
+  /* Element #ng-2 */
+
   #ng-2 {
+    /* Padding haut */
     padding-top: 10px;
   }
 
+  /* Section right */
+
   .right {
-      width: 100%;
-      margin-top: 8rem;
+    /* Largeur */
+    width: 100%;
+
+    /* Marge supérieure */
+    margin-top: 8rem;
   }
 
-  .left1, .left2, .left3, .left4, .left8{
-      width: 100%;
-      height: 250px;
-      top: 0;
-      display: none;
-      opacity: 0;
+  /* Images de gauche */
+
+  .left1, .left2, .left3, .left4, .left8 {
+    /* Largeur */
+    width: 100%;
+
+    /* Hauteur */
+    height: 250px;
+
+    /* Positionnement en haut de la page */
+    top: 0;
+
+    /* Affichage : aucun */
+    display: none;
+
+    /* Opacité */
+    opacity: 0;
   }
+
+  /* Galerie */
 
   #gal-m {
-      display: block;
+    /* Affichage : en bloc */
+    display: block;
   }
 
+  /* Titre des projets */
+
   .projetsTitre {
+    /* Taille de la police */
     font-size: 2.5rem;
+
+    /* Espacement entre les mots */
     word-spacing: -0.6rem;
+
+    /* Alignement du texte */
     text-align: start;
   }
 
+  /* Informations des projets */
+
   .projetsInfos {
+    /* Taille de la police */
     font-size: 1.5rem;
+
+    /* Alignement du texte */
     text-align:start;
+
+    /* Espacement entre les mots */
     word-spacing: -0.6rem;
   }
 
+  /* Element #ng-3 */
+
   #ng-3 {
+    /* Padding gauche */
     padding-left: 20px;
+
+    /* Padding droit */
     padding-right: 20px;
+
+    /* Marge supérieure */
     margin-top: 20px;
   }
 
+  /* Element #ng-3-2 */
+
   #ng-3-2 {
+    /* Padding gauche */
     padding-left: 20px;
+
+    /* Padding droit */
     padding-right: 20px;
+
+    /* Marge gauche */
     margin-left: 0px;
   }
 
+  /* Element #ng-3-3 */
+
   #ng-3-3 {
+    /* Padding gauche */
     padding-left: 20px;
+
+    /* Padding droit */
     padding-right: 20px;
+
+    /* Marge supérieure */
     margin-top: 20px;
   }
 
+  /* Section présentation */
+
   .presentation {
+    /* Largeur */
     width: 100%;
+
+    /* Affichage en flexbox */
     display: flex;
+
+    /* Direction de la ligne : colonne */
     flex-direction: column;
+
+    /* Marge supérieure */
     margin-top: 8rem;
+
+    /* Padding gauche */
     padding-left: 30px;
+
+    /* Padding droit */
     padding-right: 50px;
+
+    /* Alignement vertical : en haut */
     vertical-align: text-top;
+
+    /* Espace entre les éléments */
     gap: 20px;
   }
 }
