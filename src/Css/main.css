@@ -142,6 +142,14 @@
   margin-left: 40px;
 }
 
+/* Style de l'élément #ng-3-2 */
+#ng-3-4 {
+  /* Marge gauche */
+  margin-left: 20px;
+  /* État du curseur */
+  cursor: pointer;
+}
+
 /* Style des icônes RSN */
 .RSN {
   /* Largeur et hauteur */
@@ -523,6 +531,26 @@
 
   /* Chemin de l'image */
   background-image: url(../Img/ConcertApp/Cover2.jpg);
+}
+
+.left16 {
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
+  background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/PlaisirsPartages/LeftCover.png);
 }
 
 
