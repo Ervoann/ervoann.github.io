@@ -485,7 +485,45 @@
   background-image: url(../Img/HEF-ActionnariatSalarié/cover.jpg);
 }
 
+.left14 {
+  /* Largeur */
+  width: 50%;
 
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
+  background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/ConcertApp/Cover2.jpg);
+}
+
+.left15 {
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
+  background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/ConcertApp/Cover2.jpg);
+}
 
 
 /* Galerie */

@@ -3,9 +3,9 @@ const BoiteProjet = document.querySelector('#LaBoiteProjet');
 
 // Déclaration d'un tableau contenant les informations des projets.
 var Projets = [
-  ['../img/HEF-ActionnariatSalarié/TableauDeBord.jpg','[HEF Actionnariat Salarié]','Figma','avr-2023','HEF','./HEF.html'],
-  ['../img/ConcertApp/Cover.jpg','[Projet application ConcertApp]','Figma','dec-2022','ConcertApp','./ConcertApp.html'],
-  ['../img/SwipeCarbon/MockupPreview.jpg','[Application SwipeCarbon]','Figma','jan-2022','SwipeCarbon','./SwipeCarbon.html']
+  ['../Img/HEF-ActionnariatSalarié/TableauDeBord.jpg','[HEF Actionnariat Salarié]','Figma','avr-2023','HEF','./HEF.html'],
+  ['../Img/ConcertApp/Cover.jpg','[Projet application ConcertApp]','Figma','dec-2022','ConcertApp','./ConcertApp.html'],
+  ['../Img/SwipeCarbon/Cover1.jpg','[Application SwipeCarbon]','Figma','jan-2022','SwipeCarbon','./SwipeCarbon.html']
 ];
 
 // Crée une fonction pour créer une nouvelle div de projet si nécessaire.
@@ -129,6 +129,7 @@ for (let i = 0; i < Projets.length; i += 3) {
 // Sélectionne les divs avec les id "my-div0" à "my-div4".
 const LeLien = document.querySelector('#my-div0');
 const LeLien1 = document.querySelector('#my-div1');
+const LeLien2 = document.querySelector('#my-div2');
 
 // Ajoute un écouteur d'événements "click" à chaque div.
 LeLien.addEventListener('click', function() {
@@ -138,4 +139,8 @@ LeLien.addEventListener('click', function() {
 
 LeLien1.addEventListener('click', function() {
   window.open(Projets[1][5], '_self');
+});
+
+LeLien2.addEventListener('click', function() {
+  window.open(Projets[2][5], '_self');
 });
