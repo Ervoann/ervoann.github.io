@@ -4,12 +4,12 @@ var MiniaturesYoutubeZiar = ['../Img/MiniaturesZiar/IpadDisplay.jpg','[Miniature
 var Kulturika = ['../Img/Kulturika/Totem-City.jpg','[Projet affiches Kulturika]','INDESIGN / PHOTOSHOP / ILLUSTRATOR','mar-2023','Kulturika','./Kulturika.html'];
 var KickFlip = ['../Img/KickFlip/Billboard-Mockup-Realistic.jpg','[Projet KickFlip]','ILLUSTRATOR / PHOTOSHOP','fev-2023','KickFlip','./KickFlip.html'];
 var AlexandreRodtchenko = ['../Img/Rodtchenko/Magazine.jpg','[Recherches sur alexandre rodtchenko]','ILLUSTRATOR / PHOTOSHOP / indesign','mar-2023','AlexandreRodtchenko','./AlexandreRodtchenko.html'];
-var MaisonSoustraire = ['../Img/MaisonSoustraire/MagazineMockup.jpg','[Analyse exposition maison soustraire]','ILLUSTRATOR / PHOTOSHOP / Indesign','avr-2023','MaisonSoustraire','./MaisonSoustraire.html'];
+// var MaisonSoustraire = ['../Img/MaisonSoustraire/MagazineMockup.jpg','[Analyse exposition maison soustraire]','ILLUSTRATOR / PHOTOSHOP / Indesign','avr-2023','MaisonSoustraire','./MaisonSoustraire.html'];
 var TMF = ['../Img/TMF/Devanture.jpg','[Identité des Transports Mazenod Florian]','Illustrator / Photoshop / Figma','mai-2023','TMF','./TMF.html'];
-var EspaceTest = ['../Img/EspaceTestEnArchipel/Cover.jpg','[Espace-test en archipel]','Photoshop / indesign / illustrator / figma','JAN-2023','EspaceTest','./EspaceTest.html'];
+// var EspaceTest = ['../Img/EspaceTestEnArchipel/Cover.jpg','[Espace-test en archipel]','Photoshop / indesign / illustrator / figma','JAN-2023','EspaceTest','./EspaceTest.html'];
 
 
-var Projets = [MiniaturesYoutubeZiar,Kulturika,KickFlip,AlexandreRodtchenko,MaisonSoustraire,TMF,EspaceTest];
+var Projets = [MiniaturesYoutubeZiar,Kulturika,KickFlip,AlexandreRodtchenko/*,MaisonSoustraire*/,TMF/*,EspaceTestù*/];
 
 var Actuelle = window.location.pathname;
 var Page = Actuelle.split("/").pop();

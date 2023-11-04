@@ -553,6 +553,48 @@
   background-image: url(../Img/PlaisirsPartages/LeftCover.png);
 }
 
+.left17 {
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
+  background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/TMF/Devanture.jpg);
+}
+
+.left18 {
+  /* Largeur */
+  width: 50%;
+
+  /* Marge supérieure */
+  margin-top: 2em;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+  /* Position de l'image : centrée */
+  background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/Intrus/Left.png);
+}
+
+
+
 
 /* Galerie */
 
