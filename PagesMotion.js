@@ -4,7 +4,8 @@ const BoiteProjet = document.querySelector('#LaBoiteProjet');
 // Déclaration d'un tableau contenant les informations des projets.
 var Projets = [
   ['../Img/PlaisirsPartages/Cover.png','[Plaisirs Partages]','After effects / FIGMA / ILLUSTRATOR','jui-2023','PLaisirsPartages','./PlaisirsPartages.html'],
-  ['../Img/Intrus/Cover.jpg','[Intrus]','After effects / FIGMA / ILLUSTRATOR','jui-2023','Intrus','./Intrus.html']
+  ['../Img/Intrus/Cover.jpg','[Intrus]','After effects / FIGMA / ILLUSTRATOR','jui-2023','Intrus','./Intrus.html'],
+  ['../Img/AVA/Cover.jpg','[T2O création | AVA]','After effects / ILLUSTRATOR','oct-2023','AvaT2O','./AvaT2O.html']
 ];
 
 // Crée une fonction pour créer une nouvelle div de projet si nécessaire.
@@ -128,6 +129,7 @@ for (let i = 0; i < Projets.length; i += 3) {
 // Sélectionne les divs avec les id "my-div0" à "my-div4".
 const LeLien = document.querySelector('#my-div0');
 const LeLien1 = document.querySelector('#my-div1');
+const LeLien2 = document.querySelector('#my-div2');
 
 // Ajoute un écouteur d'événements "click" à chaque div.
 LeLien.addEventListener('click', function() {
@@ -137,4 +139,8 @@ LeLien.addEventListener('click', function() {
 
 LeLien1.addEventListener('click', function() {
   window.open(Projets[1][5], '_self');
+});
+
+LeLien2.addEventListener('click', function() {
+  window.open(Projets[2][5], '_self');
 });
