@@ -1,7 +1,7 @@
 const BoiteProjet = document.querySelector('#ng-3-3');
 
 var Projets2 = [
-  ['../Img/PlaisirsPartages/Cover.png','[Plaisirs Partages]','After effects / FIGMA / ILLUSTRATOR','jui-2023','PLaisirsPartages','./PlaisirsPartages.html'],
+  ['../Img/PlaisirsPartages/Cover.png','[Plaisirs Partages]','After effects / FIGMA / ILLUSTRATOR','jui-2023','PlaisirsPartages','./PlaisirsPartages.html'],
   ['../Img/Intrus/Cover.jpg','[Intrus]','After effects / FIGMA / ILLUSTRATOR','jui-2023','Intrus','./Intrus.html'],
   ['../Img/AVA/Cover.jpg','[T2O création | AVA]','After effects / ILLUSTRATOR','oct-2023','AvaT2O','./AvaT2O.html']
 ];
