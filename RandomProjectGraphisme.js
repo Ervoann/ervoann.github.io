@@ -36,13 +36,10 @@ BoiteProjet.innerHTML = '<div id="Reco" style="display: flex; flex-direction: co
 const LeLien = document.querySelector('#Reco');
 const LeLien2 = document.querySelector('#Reco2');
 
-console.log(Projets[0][5]);
-
 // Add a click event listener to the div.
 LeLien.addEventListener('click', function() {
   // Open the page in the current tab.
   window.open(Projets[LeProj][5], '_self');
-  console.log(Projets[0]);
 });
 
 // Add a click event listener to the div.

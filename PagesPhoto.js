@@ -81,7 +81,7 @@ for (let i = 0; i < Projets.length; i += 3) {
     // Crée un nouveau paragraphe avec l'id `my-div${j}`, les classes `projetsTitre` et `Primary`, et le style `text-decoration: none`.
     const text1Projet = document.createElement("p");
     text1Projet.setAttribute("id", `my-div${j}`);
-    text1Projet.classList.add("projetsInfos");
+    text1Projet.classList.add("projetsTitre");
     text1Projet.classList.add("Primary");
     text1Projet.style.textDecoration = "none";
 
@@ -114,7 +114,7 @@ for (let i = 0; i < Projets.length; i += 3) {
     // Crée un nouveau paragraphe avec l'id `my-div${j}`, les classes `projetsInfo` et `Primary`, la propriété `style.text-decoration: none`, et l'opacité `0.5`.
     const text3Projet = document.createElement("p");
     text3Projet.setAttribute("id", `my-div${j}`);
-    text3Projet.classList.add("projetsInfo");
+    text3Projet.classList.add("projetsInfos");
     text3Projet.classList.add("Primary");
     text3Projet.style.textDecoration = "none";
     text3Projet.style.opacity = "0.5";

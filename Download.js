@@ -12,7 +12,6 @@ var Page = Actuelle.split("/").pop();
 var PageActuelle = Page.slice(0, -5);
 var CurrentProject = 0;
 
-
 // Crée les divs nécessaires pour le projet.
 const div1Lien = document.createElement("div");
 div1Lien.setAttribute("id", `my-div`);
@@ -41,6 +40,8 @@ div1Lien.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" wi
 
 // Ajoute un écouteur d'événements "click" à chaque div.
 LaDiv.addEventListener('click', function() {
-  // Ouvre la page dans l'onglet actuel.
-  window.open(Projets2[CurrentProject][1], '_Blank');
+  // Vérifie que CurrentProject est différent de zéro avant d'ouvrir la page.
+  if (CurrentProject !== 0) {
+    window.open(Projets2[CurrentProject][1], '_blank');
+  }
 });

@@ -7,7 +7,6 @@ if (current === null) {
 }
 else {
   current = current
-  console.log(current)
 }
 
 // Set the CSS variables based on the current value.
