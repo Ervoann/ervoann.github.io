@@ -4,7 +4,9 @@ var Projets2 = [
   ['Télécharger les visuels (PDF)', 'https://mega.nz/file/fVZHzYrB#KDUBDjSfsU5vFbWFKYNCcNJLu5lIEo7hMxW6m5CPirc','Kulturika'],
   ['Télécharger le branding (PDF)', 'https://mega.nz/file/3VpFADpI#QB6c4NRqLeGNq8-yKVPTirAnFDzXRx5Lq00EpxkFL4s','KickFlip'],
   ['Télécharger la biographie (PDF)', 'https://mega.nz/file/3QBm0KiK#H_EBFO5Sdj8AgAOHsSpLwWUMMjgvkhwmfvrkGQZi2_U','AlexandreRodtchenko'],
-  ['Télécharger le branding (PDF)', 'https://mega.nz/file/uNoVxbYT#J_DCOKBSIUO3Pi-aiG0LJOpNbqHej_5nCZKv4zNXXrw','TMF']
+  ['Télécharger le branding (PDF)', 'https://mega.nz/file/uNoVxbYT#J_DCOKBSIUO3Pi-aiG0LJOpNbqHej_5nCZKv4zNXXrw','TMF'],
+  ['Télécharger mon CV (PDF)', 'https://mega.nz/file/nBBHDDbR#Iw-LUUtVzN7-a53YGJdC7JX02-jSvxdGhDkjyO3A5t4','index_moi'],
+  ['Télécharger le livret (PDF)', 'https://mega.nz/file/VXNmET5Q#vHxBO8MkInmpTjZyL7Ztp1n6IDCeGoYU-BYEXlQ_Jfk','Livret']
 ];
 
 var Actuelle = window.location.pathname;

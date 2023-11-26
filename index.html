@@ -5,7 +5,15 @@
   <meta name="google-site-verification" content="kxoP1iFhaag_Pt1C-Sulh7L3yDs78Uirz-LxS9KJTSg" />
 </head>
 <body>
-     
+
+  <div class="RevealContainer">
+    <h1 class="RevealText">
+        <span>GEORGES/<br>ERVOANN</span>
+    </h1>
+</div>
+<div id="background"></div>
+
+<div id="page" class="page on">
 <div class="menu" style="position: fixed; top: 0;">
 
     <div id="ng-1" class="flex">
@@ -297,8 +305,37 @@
     </div>
 </div>
 
+</div>
+
+<script>// JavaScript
+window.onload = function() {
+  // Set an initial state with background and container visible
+  document.getElementById('background').style.width = '100vw';
+  document.querySelector('.RevealContainer').style.opacity = 1;
+
+  // Initiate a transition to hide the background after 3.5 seconds
+  setTimeout(function() {
+    document.getElementById('background').style.transition = 'opacity 0.5s ease-in-out';
+    document.getElementById('background').style.opacity = 0;
+  }, 2500);
+
+  // Initiate a transition to hide the container after 3.5 seconds
+  setTimeout(function() {
+    document.querySelector('.RevealContainer').style.transition = 'opacity 0.5s ease-in-out';
+    document.querySelector('.RevealContainer').style.opacity = 0;
+  }, 2500);
+
+  // Remove the 'on' class from the page after '' seconds
+  setTimeout(function() {
+    document.getElementById('background').style.display = 'none';
+    document.querySelector('.RevealContainer').style.display = 'none';
+    document.getElementById('page').classList.remove('on');
+  }, 3000);
+};
+</script>
 <script src="../../SwitchMode.js"></script>
 <script src="../../PagesGraphisme.js"></script>
+
 
 
 </body>

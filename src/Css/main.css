@@ -123,6 +123,30 @@
   gap: 150px;
 }
 
+.presentation2 {
+  /* Largeur 100% */
+  width: 100%;
+
+  /* Affichage en ligne */
+  display: flex;
+
+  /* Direction de la ligne : row */
+  flex-direction: row;
+
+  /* Padding gauche et droit */
+  padding-left: 30px;
+  padding-right: 50px;
+
+  /* Alignement vertical : text-top */
+  vertical-align: text-top;
+
+  /* Gap entre les éléments */
+  gap: 150px;
+
+  justify-content: space-around;
+}
+
+
 /* Style des deuxième et troisième menus */
 
 .menu #ng-2, .menu3 #ng-2 {
@@ -148,6 +172,13 @@
   margin-left: 20px;
   /* État du curseur */
   cursor: pointer;
+}
+
+/* Style de l'élément #ng-3 */
+#ng-4 {
+  /* Padding gauche */
+  padding-left: 20px;
+  width: 50rem;
 }
 
 /* Style des icônes RSN */
@@ -610,6 +641,75 @@
   background-image: url(../Img/AVA/Left.png);
 }
 
+.left20 {
+  /* Largeur */
+  width: 50%;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+   /* Position de l'image : centrée */
+   background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/Blau/Preview.jpg);
+}
+
+.left21 {
+  /* Largeur */
+  width: 50%;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+   /* Position de l'image : centrée */
+   background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/Redbull/Preview.jpg);
+}
+
+
+.left22 {
+  /* Largeur */
+  width: 50%;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+   /* Position de l'image : centrée */
+   background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/Enfants/Preview2.jpg);
+}
+
+.left23 {
+  /* Largeur */
+  width: 50%;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+   /* Position de l'image : centrée */
+   background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/P5JS/Preview.jpg);
+}
+
 
 
 
@@ -620,17 +720,43 @@
   display: block;
 }
 
-#gal-m2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.customer-logo-grid {
+  display: grid;
+  /*grid-template-columns: repeat(4, minmax(0, 1fr));*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
 }
 
-.gal-m2 {
+.customer-logo-item {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
+
+.customer-logo{
+  max-height: 65px;
+  max-width: 120px;
+}
+
+.customer-logo:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .customer-logo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .customer-logo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+
 
 /* Scrollbar */
 
@@ -988,10 +1114,79 @@
   transition: 0.8s ease-in-out;
 }
 
+.on {
+  display: none;
+  transition: display 1s ease-in-out;
+}
+
+
+.RevealContainer {
+  padding: 100px 20px 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Position the container above the background */
+  background-color: transparent;
+  transition: display 1s ease-in-out;
+}
+
+.RevealText {
+  margin: 0;
+  text-align: left;
+  font-size: 150px;
+  overflow: hidden;
+  line-height: 1;
+  font-family: s'Space Mono', monospace;
+  z-index: 1; /* Position the text behind the container */
+  background-color: transparent;
+  display: block;
+}
+
+.RevealText span {
+  color: var(--Secondary);
+  display: block;
+  animation: MyReveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  background-color: transparent;
+}
+
+@keyframes MyReveal {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* CSS */
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0vw;
+  background: var(--Pick);
+  transition: width 2s ease-in-out;
+  z-index: 0; /* Position the background behind the text and container */
+}
 
 /* Media query pour les écrans de moins de 1000px */
 
 @media (max-width: 1000px) {
+  .RevealText {
+    margin: 0;
+    text-align: left;
+    font-size: 100px;
+    overflow: hidden;
+    line-height: 1;
+    font-family: s'Space Mono', monospace;
+    z-index: 1; /* Position the text behind the container */
+    background-color: transparent;
+    display: block;
+  }
 
   /* Section des projets */
 
@@ -1198,9 +1393,50 @@
     margin-top: 20px;
   }
 
+    /* Element #ng-4 */
+
+    #ng-4 {
+      /* Padding gauche */
+      padding-left: 20px;
+  
+      /* Padding droit */
+      padding-right: 20px;
+  
+      /* Marge supérieure */
+      margin-top: 20px;
+    }
+
   /* Section présentation */
 
   .presentation {
+    /* Largeur */
+    width: 100%;
+
+    /* Affichage en flexbox */
+    display: flex;
+
+    /* Direction de la ligne : colonne */
+    flex-direction: column;
+
+    /* Marge supérieure */
+    margin-top: 8rem;
+
+    /* Padding gauche */
+    padding-left: 30px;
+
+    /* Padding droit */
+    padding-right: 50px;
+
+    /* Alignement vertical : en haut */
+    vertical-align: text-top;
+
+    /* Espace entre les éléments */
+    gap: 20px;
+  }
+
+  /* Section présentation */
+
+  .presentation2 {
     /* Largeur */
     width: 100%;
 
