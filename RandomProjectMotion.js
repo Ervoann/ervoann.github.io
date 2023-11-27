@@ -5,7 +5,9 @@ var Projets2 = [
   ['../Img/Intrus/Cover.jpg','[Intrus]','After effects / FIGMA / ILLUSTRATOR','jui-2023','Intrus','./Intrus.html'],
   ['../Img/AVA/Cover.jpg','[T2O création | AVA]','After effects / ILLUSTRATOR','oct-2023','AvaT2O','./AvaT2O.html'],
   ['../Img/Blau/Preview.jpg','[Vidéo identité média indépendant]','After effects / ILLUSTRATOR / photoshop','dec-2021','Blau','./Blau.html'],
-  ['../Img/Redbull/Preview.jpg','[Vidéo promotionnelle Redbull]','After effects / Blender','avril-2022','RebBull','./RedBull.html'],
+  ['../Img/Redbull/Preview.jpg','[Vidéo promotionnelle Redbull]','After effects / Blender','avril-2022','RedBull','./RedBull.html'],
+  ['../Img/P5JS/Preview.jpg','[Animation générative P5JS]','P5JS','jui-2023','P5Js','./P5Js.html'],
+  ['../Img/PluginAE/Preview.jpg','[Developpement plugin AE]','After effects','jui-2023','PluginAE','./PluginAE.html']
 ];
 
 var Actuelle = window.location.pathname;
@@ -16,12 +18,12 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
 
-var LeProj = getRandomInt(5);
-var LeProj2 = getRandomInt(5);
+var LeProj = getRandomInt(7);
+var LeProj2 = getRandomInt(7);
 
 while (LeProj === LeProj2 || Projets2[LeProj][4] === PageActuelle || Projets2[LeProj2][4] === PageActuelle) {
-        var LeProj2 = getRandomInt(5);
-        var LeProj = getRandomInt(5);
+        var LeProj2 = getRandomInt(7);
+        var LeProj = getRandomInt(7);
 }
 
 BoiteProjet.innerHTML = '<div id="Reco" style="display: flex; flex-direction: column; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 10px;  width: 50%;"><div style="width: 100%; height: 10rem; background-image: url('+Projets2[LeProj][0]+'); background-repeat: no-repeat; background-size: cover; margin-bottom: 5px; background-position:center;"><div style="height: 50px; opacity: 0; @media (max-width: 1000px) {height: 50px;}"></div></div><p id="Reco" class="projetsTitre Primary" style="text-decoration: none;">'+Projets2[LeProj][1]+'</p><p id="Reco" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">'+Projets2[LeProj][2]+'</p><p id="Reco" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">'+Projets2[LeProj][3]+'</p></div></div>     <div id="Reco2" style="display: flex; flex-direction: column; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 10px;  width: 50%;"><div style="width: 100%; height: 10rem; background-image: url('+Projets2[LeProj2][0]+'); background-repeat: no-repeat; background-size: cover; margin-bottom: 5px; background-position:center;"><div style="height: 50px; opacity: 0; @media (max-width: 1000px) {height: 50px;}"></div></div><p id="Reco2" class="projetsTitre Primary" style="text-decoration: none;">'+Projets2[LeProj2][1]+'</p><p id="Reco2" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">'+Projets2[LeProj2][2]+'</p><p id="Reco2" class="projetsInfos Primary" style="opacity: 0.5; text-decoration: none;">'+Projets2[LeProj2][3]+'</p></div></div>'

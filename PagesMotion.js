@@ -6,9 +6,10 @@ var Projets = [
   ['../Img/PlaisirsPartages/Cover.png','[Plaisirs Partages]','After effects / FIGMA / ILLUSTRATOR','jui-2023','PLaisirsPartages','./PlaisirsPartages.html'],
   ['../Img/Intrus/Cover.jpg','[Intrus]','After effects / FIGMA / ILLUSTRATOR','jui-2023','Intrus','./Intrus.html'],
   ['../Img/AVA/Cover.jpg','[T2O création | AVA]','After effects / ILLUSTRATOR, Blender','oct-2023','AvaT2O','./AvaT2O.html'],
-  ['../Img/Redbull/Preview.jpg','[Vidéo promotionnelle Redbull]','After effects / Blender','avril-2022','RebBull','./RedBull.html'],
+  ['../Img/PluginAE/Preview.jpg','[Developpement plugin AE]','After effects','jui-2023','PluginAE','./PluginAE.html'],
+  ['../Img/Redbull/Preview.jpg','[Vidéo promotionnelle Redbull]','After effects / Blender','avr-2022','RebBull','./RedBull.html'],
   ['../Img/Blau/Preview.jpg','[Vidéo identité média indépendant]','After effects / ILLUSTRATOR / photoshop','dec-2021','Blau','./Blau.html'],
-  ['../Img/P5JS/Preview.jpg','[Animation générative P5JS]','P5JS','jui-2023','P5JS','./P5JS.html']
+  ['../Img/P5JS/Preview.jpg','[Animation générative P5JS]','P5JS','jui-2023','P5JS','./P5Js.html']
 ];
 
 // Crée une fonction pour créer une nouvelle div de projet si nécessaire.
@@ -136,6 +137,7 @@ const LeLien2 = document.querySelector('#my-div2');
 const LeLien3 = document.querySelector('#my-div3');
 const LeLien4 = document.querySelector('#my-div4');
 const LeLien5 = document.querySelector('#my-div5');
+const LeLien6 = document.querySelector('#my-div6');
 
 // Ajoute un écouteur d'événements "click" à chaque div.
 LeLien.addEventListener('click', function() {
@@ -161,4 +163,8 @@ LeLien4.addEventListener('click', function() {
 
 LeLien5.addEventListener('click', function() {
   window.open(Projets[5][5], '_self');
+});
+
+LeLien6.addEventListener('click', function() {
+  window.open(Projets[6][5], '_self');
 });
