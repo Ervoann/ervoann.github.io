@@ -97,6 +97,16 @@
   font-size: medium;
 }
 
+.menu #ng-2:nth-child(4) div:nth-child(2) div a svg path, .menu3 #ng-2:nth-child(2) div:nth-child(2) div a svg path{
+  opacity: 1;
+  transition: 0.5 ease-in-out;
+}
+
+.menu #ng-2:nth-child(4) div:nth-child(2) div a svg path:hover, .menu3 #ng-2:nth-child(2) div:nth-child(2) div a svg path:hover {
+  opacity: 0.5;
+  transition: 0.5 ease-in-out;
+}
+
 /* Section de présentation */
 
 .presentation {
@@ -265,6 +275,13 @@
 
 #my-div0, #my-div, #my-div1, #my-div2, #my-div3, #my-div4, #my-div5, #my-div6, #Reco, #Reco2 {
   background-color: var(--Tertiary);
+  transition: 0.8s ease-in-out;
+}
+
+#my-div0:hover, #my-div:hover, #my-div1:hover, #my-div2:hover, #my-div3:hover, #my-div4:hover, #my-div5:hover, #my-div6:hover, #Reco:hover, #Reco2:hover {
+  opacity: 0.5;
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
 }
 
 /* Classe Bigger */

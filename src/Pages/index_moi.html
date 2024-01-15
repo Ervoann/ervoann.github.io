@@ -347,37 +347,46 @@
 
   <div id="gal-m">
     <div style="display: flex; flex-direction: column; margin-left: 50px; ">
-      <p class="projetsTitre Primary" style="text-decoration: none; margin-top: 50px;">[Ils m'ont fait confiance]</p>
+      <p class="projetsTitre Primary" style="text-decoration: none; margin-top: 50px;">[Les entreprises et associations avec qui j'ai pu travailler]</p>
   </div>
   </div>
 
   <div class="customer-logo-grid" style="margin-top: 2rem;">
     <div class="customer-logo-item">
-      <a href="https://opera.saint-etienne.fr/otse/" target="_blank"><img class="customer-logo" src="../Img/Icons/6-logo-opera-saint-etienne.png" /></a>
+      <a href="https://opera.saint-etienne.fr/otse/" target="_blank"><img class="customer-logo opera" src="../Img/Icons/6-logo-opera-saint-etienne2.png" /></a>
+    </div>  
+    <div class="customer-logo-item">
+      <a href="https://www.ziar.be/" target="_blank"><img class="customer-logo ziar" src="../Img/Icons/ZIAR_LOGO_NOIR2.png" /></a>
     </div>
     <div class="customer-logo-item">
-      <a href="https://www.ziar.be/" target="_blank"><img class="customer-logo" src="../Img/Icons/ZIAR_LOGO_NOIR.png" /></a>
+      <a href="https://www.saint-etienne-metropole.fr/" target="_blank"><img class="customer-logo sem" src="../Img/Icons/188_249_Logo-SEM-blanc2.png" /></a>
     </div>
     <div class="customer-logo-item">
-      <a href="https://www.saint-etienne-metropole.fr/" target="_blank"><img class="customer-logo" src="../Img/Icons/188_249_Logo-SEM-blanc.png" /></a>
-    </div>
-    <div class="customer-logo-item">
-      <a href="https://optimiz-network.fr/" target="_blank"><img class="customer-logo" src="../Img/Icons/LOGO_OPTIMIZ_LONG.png" /></a>
+      <a href="https://optimiz-network.fr/" target="_blank"><img class="customer-logo optimiz" src="../Img/Icons/LOGO_OPTIMIZ_LONG2.png" /></a>
     </div>
   </div>
 
   <div class="customer-logo-grid" style="margin-top: 2rem;">
     <div class="customer-logo-item">
-      <a href="https://www.instagram.com/t2o_creation/" target="_blank"><img class="customer-logo" src="../Img/Icons/T2o.png" /></a>
+      <a href="https://www.instagram.com/t2o_creation/" target="_blank"><img class="customer-logo t2o" src="../Img/Icons/T2o2.png" /></a>
     </div>
     <div class="customer-logo-item">
-      <a href="https://www.youtube.com/@SousCulturemedia" target="_blank"><img class="customer-logo" src="../Img/Icons/SousCulture.png" /></a>
+      <a href="https://www.youtube.com/@SousCulturemedia" target="_blank"><img class="customer-logo sousculture" src="../Img/Icons/SousCulture2.png" /></a>
     </div>
     <div class="customer-logo-item">
-      <a href="https://www.instagram.com/leclapier.ste/" target="_blank"><img class="customer-logo" src="../Img/Icons/Logo-ClapFondTransparent.png" /></a>
+      <a href="https://www.instagram.com/leclapier.ste/" target="_blank"><img class="customer-logo clap" src="../Img/Icons/Logo-ClapFondTransparent2.png" /></a>
     </div>
     <div class="customer-logo-item">
-      <a href="https://highday.fr/" target="_blank"><img class="customer-logo" src="../Img/Icons/logo_highday_darkmode.png" /></a>
+      <a href="https://highday.fr/" target="_blank"><img class="customer-logo highday" src="../Img/Icons/logo_highday_darkmode2.png" /></a>
+    </div>
+  </div>
+
+  <div class="customer-logo-grid" style="margin-top: 2rem;">
+    <div class="customer-logo-item">
+      <a href="https://www.hef.fr/" target="_blank"><img class="customer-logo hef" src="../Img/Icons/HEF_DURFERRIT_CMJN-012.png" /></a>
+    </div>
+    <div class="customer-logo-item">
+      <a href="https://garage404.com/" target="_blank"><img class="customer-logo g404" src="../Img/Icons/cropped-garage4042.png" /></a>
     </div>
   </div>
 
@@ -428,7 +437,87 @@
     </div>
 </div>
 
+<script>
+  // Récupère la valeur de la variable current
+  const current2 = localStorage.getItem("current");
 
+  photos(); // Appelle la fonction photos
+  
+  function photos() {  // Récupère la valeur de la variable current
+  const opera = document.querySelector(".opera");
+  const logohighday = document.querySelector(".highday");
+  const ziar = document.querySelector(".ziar");
+  const optimiz = document.querySelector(".optimiz");
+  const T2o = document.querySelector(".t2o");
+  const sem = document.querySelector(".sem");
+  const sclt = document.querySelector(".sousculture");
+  const clap = document.querySelector(".clap");
+  const hef = document.querySelector(".hef");
+  const g404 = document.querySelector(".g404");
+
+  // Initialise les variables de couleurs
+  const whiteImageHighday = "../Img/Icons/logo_highday_darkmode.png";
+  const blackImageHighday = "../Img/Icons/logo_highday_darkmode2.png";
+
+  const whiteImageZiar = "../Img/Icons/ZIAR_LOGO_NOIR.png";
+  const blackImageZiar = "../Img/Icons/ZIAR_LOGO_NOIR2.png";
+
+  const whiteImageOptimiz = "../Img/Icons/LOGO_OPTIMIZ_LONG.png";
+  const blackImageOptimiz = "../Img/Icons/LOGO_OPTIMIZ_LONG2.png";
+
+  const whiteImageT2o = "../Img/Icons/T2o.png";
+  const blackImageT2o = "../Img/Icons/T2o2.png";
+
+  const whiteImageOpera = "../Img/Icons/6-logo-opera-saint-etienne.png";
+  const blackImageOpera = "../Img/Icons/6-logo-opera-saint-etienne2.png";
+
+  const whiteImageSem = "../Img/Icons/188_249_Logo-SEM-blanc.png";
+  const blackImageSem = "../Img/Icons/188_249_Logo-SEM-blanc2.png";
+
+  const whiteImageSousculture = "../Img/Icons/SousCulture.png";
+  const blackImageSousculture = "../Img/Icons/SousCulture2.png";
+
+  const whiteImageClap = "../Img/Icons/Logo-ClapFondTransparent.png";
+  const blackImageClap = "../Img/Icons/Logo-ClapFondTransparent2.png";
+
+  const whiteImageHef = "../Img/Icons/HEF_DURFERRIT_CMJN-01.png";
+  const blackImageHef = "../Img/Icons/HEF_DURFERRIT_CMJN-012.png";
+
+  const whiteImage404 = "../Img/Icons/cropped-garage404.png";
+  const blackImage404 = "../Img/Icons/cropped-garage4042.png";
+  
+
+  // Parcours les images de la page
+  const images = document.querySelectorAll("img");
+  for (const image of images) {
+    // Si current = 1, les images sont blanches
+    if (current2 == 0) {
+      logohighday.src = blackImageHighday;
+      ziar.src = blackImageZiar;
+      optimiz.src = blackImageOptimiz;
+      T2o.src = blackImageT2o;
+      opera.src = blackImageOpera;
+      sem.src = blackImageSem;
+      sclt.src = blackImageSousculture;
+      clap.src = blackImageClap;
+      hef.src = blackImageHef;
+      g404.src = blackImage404;
+    } else {
+      // Sinon, les images sont noires
+      logohighday.src = whiteImageHighday;
+      ziar.src = whiteImageZiar;
+      optimiz.src = whiteImageOptimiz;
+      T2o.src = whiteImageT2o;
+      opera.src = whiteImageOpera;
+      sem.src = whiteImageSem;
+      sclt.src = whiteImageSousculture;
+      clap.src = whiteImageClap; 
+      hef.src = whiteImageHef;
+      g404.src = whiteImage404;
+    }
+  }
+}
+</script>
 <script src="../../SwitchMode.js"></script>
 <script src="../../Download.js"></script>
 </body>
