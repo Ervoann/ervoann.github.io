@@ -1,12 +1,12 @@
 const BoiteProjet = document.querySelector('#ng-3-3');
 
 var Projets = [
-  ['../Img/MiniaturesZiar/IpadDisplay.jpg','[Miniatures Ziar]','Illustrator / PHOTOSHOP','jui-2023','MiniaturesYoutubeZiar','./MiniaturesYoutubeZiar.html'],
+  ['../Img/MiniaturesZiar/Miniature.jpg','[Miniatures Ziar]','Illustrator / PHOTOSHOP','jui-2023','MiniaturesYoutubeZiar','./MiniaturesYoutubeZiar.html'],
   ['../Img/Kulturika/Totem-City.jpg','[Projet affiches Kulturika]','INDESIGN / PHOTOSHOP / ILLUSTRATOR','déc-2022','Kulturika','./Kulturika.html'],
-  ['../Img/KickFlip/Billboard-Mockup-Realistic.jpg','[Projet KickFlip]','ILLUSTRATOR / PHOTOSHOP','fev-2023','KickFlip','./KickFlip.html'],
+  ['../Img/KickFlip/Miniature.jpg','[Projet KickFlip]','ILLUSTRATOR / PHOTOSHOP','fev-2023','KickFlip','./KickFlip.html'],
   ['../Img/Rodtchenko/Magazine.jpg','[Recherches sur alexandre rodtchenko]','ILLUSTRATOR / PHOTOSHOP / indesign','mar-2023','AlexandreRodtchenko','./AlexandreRodtchenko.html'],
   /*['./src/Img/MaisonSoustraire/MagazineMockup.jpg','[Analyse exposition maison soustraire]','ILLUSTRATOR / PHOTOSHOP / Indesign','avr-2023','MaisonSoustraire','./MaisonSoustraire.html'],*/
-  ['../Img/TMF/Devanture.jpg','[Identité des Transports Mazenod Florian]','Illustrator / Photoshop / Figma','mai-2023','TMF','./TMF.html'],
+  ['../Img/TMF/Miniature.jpg','[Identité des Transports Mazenod Florian]','Illustrator / Photoshop / Figma','mai-2023','TMF','./TMF.html'],
   ['../Img/Enfants/Preview.jpg','[Livret : design avec les enfants]','Illustrator / Photoshop / Indesign','nov-2023',' ','./Livret.html']/*,
   ['./src/Img/EspaceTestEnArchipel/Cover.jpg','[Espace-test en archipel]','Photoshop / indesign / illustrator / figma','JAN-2023','EspaceTest','./EspaceTest.html']*/
 ];
