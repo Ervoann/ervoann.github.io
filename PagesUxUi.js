@@ -5,7 +5,9 @@ const BoiteProjet = document.querySelector('#LaBoiteProjet');
 var Projets = [
   ['../Img/HEF-ActionnariatSalarié/TableauDeBord.jpg','[HEF Actionnariat Salarié]','Figma','avr-2023','HEF','./HEF.html'],
   ['../Img/ConcertApp/Cover.jpg','[Projet application ConcertApp]','Figma','dec-2022','ConcertApp','./ConcertApp.html'],
-  ['../Img/SwipeCarbon/Cover1.jpg','[Application SwipeCarbon]','Figma','jan-2022','SwipeCarbon','./SwipeCarbon.html']
+  ['../Img/SwipeCarbon/Cover1.jpg','[Application SwipeCarbon]','Figma','jan-2022','SwipeCarbon','./SwipeCarbon.html'],
+  ['../Img/Enshantay/Building.png','[Projet WebRadio Enshantay]','Figma','En construction','Enshantay','...'],
+  ['../Img/Nidaie/NidaieCover.png','[Projet site vitrine et application Nidaie]','Figma','En construction','Nidaie','...']
 ];
 
 // Crée une fonction pour créer une nouvelle div de projet si nécessaire.
