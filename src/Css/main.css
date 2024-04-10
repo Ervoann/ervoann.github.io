@@ -276,12 +276,20 @@
 #my-div0, #my-div, #my-div1, #my-div2, #my-div3, #my-div4, #my-div5, #my-div6, #Reco, #Reco2 {
   background-color: var(--Tertiary);
   transition: 0.8s ease-in-out;
+  opacity: 1;
+  scale: 1;
 }
 
 #my-div0:hover, #my-div:hover, #my-div1:hover, #my-div2:hover, #my-div3:hover, #my-div4:hover, #my-div5:hover, #my-div6:hover, #Reco:hover, #Reco2:hover {
+  scale: 0.99;
+  /* Opacité */
   opacity: 0.5;
-  transition: 0.8s ease-in-out;
+
+  /* Curseur */
   cursor: pointer;
+
+  /* Transition */
+  transition: 0.5s ease-out;
 }
 
 /* Classe Bigger */
@@ -1137,7 +1145,20 @@
 
 /* Images */
 
+.Image {
+  /* Opacité */
+  opacity: 1;
+  scale: 1;
+
+  /* Curseur */
+  cursor: pointer;
+
+  /* Transition */
+  transition: 0.8s ease-in-out;
+}
+
 .Image:hover {
+  scale: 0.98;
   /* Opacité */
   opacity: 0.5;
 
@@ -1145,7 +1166,7 @@
   cursor: pointer;
 
   /* Transition */
-  transition: 0.8s ease-in-out;
+  transition: 0.5s ease-out;
 }
 
 .on {
