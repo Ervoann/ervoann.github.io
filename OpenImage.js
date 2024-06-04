@@ -57,5 +57,11 @@ imageDivs.forEach(div => {
       // Remove the background image element from the body
       document.body.removeChild(backgroundImageElement);
     });
+
+    backgroundImageElement.addEventListener('click', () => {
+      // Remove the background image element from the body
+      document.body.removeChild(backgroundImageElement);
+    });
+    
   });
 });

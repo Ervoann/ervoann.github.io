@@ -19,6 +19,7 @@
 /* Comportement de défilement fluide */
 * {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Box-sizing border-box pour tous les éléments */
@@ -212,7 +213,6 @@
 }
 
 /* Section des projets */
-
 .projets {
   /* Largeur 100% */
   width: 100%;
@@ -235,7 +235,22 @@
 
   /* Gap entre les éléments */
   gap: 10px;
+
+  /* Animation */
+  animation-name: reveal;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
 }
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* Section des projets 2 */
 
@@ -341,10 +356,15 @@
   width: 50%;
 
   /* Marge supérieure */
-  margin-top: 2.5em;
+  margin-top: 3.5em;
 
   /* Marge inférieure */
   margin-bottom: 20px;
+
+  animation-name: reveal;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
 /* Images de gauche */
@@ -1186,6 +1206,7 @@
   z-index: 2; /* Position the container above the background */
   background-color: transparent;
   transition: display 1s ease-in-out;
+  overflow:hidden;
 }
 
 .RevealText {
@@ -1198,6 +1219,7 @@
   z-index: 1; /* Position the text behind the container */
   background-color: transparent;
   display: block;
+  overflow:hidden;
 }
 
 .RevealText span {
@@ -1205,6 +1227,7 @@
   display: block;
   animation: MyReveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
   background-color: transparent;
+  overflow:hidden;
 }
 
 @keyframes MyReveal {
