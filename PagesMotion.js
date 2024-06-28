@@ -4,12 +4,17 @@ const BoiteProjet = document.querySelector('#LaBoiteProjet');
 // Déclaration d'un tableau contenant les informations des projets.
 var Projets = [
   ['../Img/PlaisirsPartages/Cover.png','[Plaisirs Partages]','After effects / FIGMA / ILLUSTRATOR','jui-2023','PLaisirsPartages','./PlaisirsPartages.html'],
-  ['../Img/Intrus/Cover.jpg','[Intrus]','After effects / FIGMA / ILLUSTRATOR','jui-2023','Intrus','./Intrus.html'],
-  ['../Img/AVA/Cover.jpg','[T2O création | AVA]','After effects / ILLUSTRATOR, Blender','oct-2023','AvaT2O','./AvaT2O.html'],
   ['../Img/PluginAE/Preview.jpg','[Developpement plugin AE]','After effects','jui-2023','PluginAE','./PluginAE.html'],
+  ['../Img/AVA/Cover.jpg','[T2O création | AVA]','After effects / ILLUSTRATOR, Blender','oct-2023','AvaT2O','./AvaT2O.html'],
   ['../Img/Redbull/Preview.jpg','[Vidéo promotionnelle Redbull]','After effects / Blender','avr-2022','RebBull','./RedBull.html'],
+  ['../Img/Intrus/Cover.jpg','[Intrus]','After effects / FIGMA / ILLUSTRATOR','jui-2023','Intrus','./Intrus.html'],
   ['../Img/Blau/Preview.jpg','[Vidéo identité média indépendant]','After effects / ILLUSTRATOR / photoshop','dec-2021','Blau','./Blau.html'],
-  ['../Img/P5JS/Preview.jpg','[Animation générative P5JS]','P5JS','jui-2023','P5JS','./P5Js.html']
+  ['../Img/Legavote/Preview.png','[Candidature Legavote]','After effects / FIGMA / ILLUSTRATOR','Jui-2024','CandidatureLegavote','./CandidatureLegavote.html'],
+  ['../Img/P5JS/Preview.jpg','[Animation générative P5JS]','P5JS','jui-2023','P5JS','./P5Js.html'],
+  ['../Img/Steply/Preview.png','[Candidature Steply]','After effects / FIGMA / ILLUSTRATOR','Avr-2024','CandidatureSteply','./CandidatureSteply.html'],
+  ['../Img/Souchiol/Preview.png','[Vidéo promotionnelle Souchiol]','After Effects / Figma / Premiere Pro','mar-2023','Souchiol','./Souchiol.html'],
+  ['../Img/EartsupAnimation/Preview.png','[Candidature E-artsup]','After effects / ILLUSTRATOR','oct-2023','CandidatureEartsup','CandidatureEartsup.html'],
+  ['../Img/AppHighday/PreviewTemporary.png','[Vidéo promotionnelle Application]','After effects / ILLUSTRATOR','En construction','AvaT2O','#']
 ];
 
 // Crée une fonction pour créer une nouvelle div de projet si nécessaire.
@@ -26,14 +31,150 @@ function createDivProject(projects, index) {
   return null;
 }
 
+// Crée une fonction pour afficher plus de projets
+function afficherPlus(projects, startIndex) {
+  // Vérifie si le nombre de projets restant est supérieur à 3
+  if (projects.length > startIndex + 3) {
+    // Crée un bouton "Afficher plus"
+    const showMoreButton = document.createElement("div");
+    const showMoreText = document.createElement("p");
+    showMoreText.textContent = "Plus de projets";
+    showMoreButton.appendChild(showMoreText);
+    showMoreButton.classList.add("ShowMore");
+
+
+    // Stocke la liste des divs à cacher/montrer
+    const divsToToggle = [];
+
+    // Crée une div pour les projets cachés
+    const divProject2 = document.createElement("div");
+    divProject2.classList.add("Projets3"); // Change la classe en "Projets3"
+    divProject2.style.display = "none"; // Cache la div par défaut
+
+    // Ajoute un écouteur d'événement au bouton pour afficher plus de projets
+    showMoreButton.addEventListener("click", () => {
+      // Cache le bouton "Afficher plus"
+      showMoreText.textContent = showMoreText.textContent === "Plus de projets" ? "Moins de projets" : "Plus de projets";
+      // Inverse l'état des divs
+      divsToToggle.forEach(div => {
+        div.style.display = div.style.display === "none" ? "flex" : "none";
+      });
+
+      // Inverse l'état de la divProject2
+      divProject2.style.display = divProject2.style.display === "none" ? "flex" : "none";
+    });
+
+    // Ajoute le bouton "Afficher plus" à la div "BoiteProjet" **avant** les divs cachées
+    BoiteProjet.appendChild(showMoreButton);
+
+    // Ajoute la divProject2 à la div "BoiteProjet"
+    BoiteProjet.appendChild(divProject2);
+
+    // Boucle sur les projets restants et crée les divs
+    let j = startIndex + 3;
+    let divProjectCount = 0; // Compteur de projets dans la ligne actuelle
+    while (j < projects.length) {
+      // Crée une nouvelle div de projet pour la ligne si nécessaire
+      if (divProjectCount === 0) {
+        const divProject = createDivProject(projects, j);
+        divProject2.appendChild(divProject);
+      }
+
+      // Crée les divs nécessaires pour le projet
+      const project = projects[j];
+
+      const div1Projet = document.createElement("div");
+      div1Projet.setAttribute("id", `my-div${j}`);
+      div1Projet.style.display = "none"; // Cache les divs par défaut
+      div1Projet.style.flexDirection = "column";
+      div1Projet.style.paddingLeft = "20px";
+      div1Projet.style.paddingRight = "20px";
+      div1Projet.style.paddingTop = "50px";
+      div1Projet.style.paddingBottom = "30px";
+
+      // Ajoute la div "div1Projet" à la dernière div de projet
+      divProject2.children[divProject2.children.length - 1].appendChild(div1Projet); 
+
+      const div2Projet = document.createElement("div");
+      const bg = project[0];
+
+      div2Projet.classList.add(`my-div${j}`);
+      div2Projet.style.width = "100%";
+      div2Projet.style.height = "50rem";
+      div2Projet.style.backgroundImage = `url("${bg}")`;
+      div2Projet.style.backgroundRepeat = "no-repeat";
+      div2Projet.style.backgroundSize = "cover";
+      div2Projet.style.marginBottom = "5px";
+      div2Projet.style.backgroundPosition = "center";
+
+      div1Projet.appendChild(div2Projet);
+
+      const div3Projet = document.createElement("div");
+      div3Projet.classList.add("Bigger");
+
+      div2Projet.appendChild(div3Projet);
+
+      const titre = document.createTextNode(project[1]);
+      const text1Projet = document.createElement("p");
+      text1Projet.setAttribute("id", `my-div${j}`);
+      text1Projet.classList.add("projetsTitre");
+      text1Projet.classList.add("Primary");
+      text1Projet.style.textDecoration = "none";
+      text1Projet.appendChild(titre);
+      div1Projet.appendChild(text1Projet);
+
+      const sousTitre = document.createTextNode(project[2]);
+      const text2Projet = document.createElement("p");
+      text2Projet.setAttribute("id", `my-div${j}`);
+      text2Projet.classList.add("projetsInfos");
+      text2Projet.classList.add("Primary");
+      text2Projet.style.textDecoration = "none";
+      text2Projet.style.opacity = "0.5";
+      text2Projet.appendChild(sousTitre);
+      div1Projet.appendChild(text2Projet);
+
+      const sousTitre2 = document.createTextNode(project[3]);
+      const text3Projet = document.createElement("p");
+      text3Projet.setAttribute("id", `my-div${j}`);
+      text3Projet.classList.add("projetsInfos");
+      text3Projet.classList.add("Primary");
+      text3Projet.style.textDecoration = "none";
+      text3Projet.style.opacity = "0.5";
+      text3Projet.appendChild(sousTitre2);
+      div1Projet.appendChild(text3Projet);
+
+      div1Projet.addEventListener('click', function() {
+        window.open(project[5], '_self');
+      });
+
+      divsToToggle.push(div1Projet);
+
+      j++; // Incrémente l'index pour le prochain projet
+      divProjectCount++; // Incrémente le compteur de projets dans la ligne
+
+      // Crée une nouvelle ligne si le compteur atteint 3
+      if (divProjectCount === 3) {
+        divProjectCount = 0; // Réinitialise le compteur pour la nouvelle ligne
+      }
+    }
+  }
+}
+
 // Met à jour les boucles for pour créer de nouvelles divs de projet si nécessaire.
-for (let i = 0; i < Projets.length; i += 3) {
+let divProjectCount = 0;
+for (let i = 0; i < 9; i += 3) { // Affiche les trois premières lignes
   // Crée une nouvelle div de projet, si nécessaire.
   const divProject = createDivProject(Projets, i);
 
   // Si une nouvelle div de projet a été créée, l'ajouter à la div "BoiteProjet".
   if (divProject) {
     BoiteProjet.appendChild(divProject);
+    divProjectCount++;
+
+    // Appelle la fonction afficherPlus pour afficher plus de projets si nécessaire
+    if (divProjectCount === 3 && i + 3 < Projets.length) {
+      afficherPlus(Projets, i);
+    }
   }
 
   // Pour chaque projet dans le tableau de projets,
@@ -45,7 +186,7 @@ for (let i = 0; i < Projets.length; i += 3) {
     // Crée les divs nécessaires pour le projet.
     const div1Projet = document.createElement("div");
     div1Projet.setAttribute("id", `my-div${j}`);
-    div1Projet.style.display = "flex";
+    div1Projet.style.display = "flex"; // Affiche les divs par défaut
     div1Projet.style.flexDirection = "column";
     div1Projet.style.paddingLeft = "20px";
     div1Projet.style.paddingRight = "20px";
@@ -126,45 +267,10 @@ for (let i = 0; i < Projets.length; i += 3) {
 
     // Ajoute le paragraphe `text3Projet` à la div "div1Projet".
     div1Projet.appendChild(text3Projet);
+
+    // Ajoute un écouteur d'événement "click" à la div "div1Projet" pour ouvrir la page du projet
+    div1Projet.addEventListener('click', function() {
+      window.open(project[5], '_self');
+    });
+  }
 }
-}
-
-
-// Sélectionne les divs avec les id "my-div0" à "my-div4".
-const LeLien = document.querySelector('#my-div0');
-const LeLien1 = document.querySelector('#my-div1');
-const LeLien2 = document.querySelector('#my-div2');
-const LeLien3 = document.querySelector('#my-div3');
-const LeLien4 = document.querySelector('#my-div4');
-const LeLien5 = document.querySelector('#my-div5');
-const LeLien6 = document.querySelector('#my-div6');
-
-// Ajoute un écouteur d'événements "click" à chaque div.
-LeLien.addEventListener('click', function() {
-  // Ouvre la page dans l'onglet actuel.
-  window.open(Projets[0][5], '_self');
-});
-
-LeLien1.addEventListener('click', function() {
-  window.open(Projets[1][5], '_self');
-});
-
-LeLien2.addEventListener('click', function() {
-  window.open(Projets[2][5], '_self');
-});
-
-LeLien3.addEventListener('click', function() {
-  window.open(Projets[3][5], '_self');
-});
-
-LeLien4.addEventListener('click', function() {
-  window.open(Projets[4][5], '_self');
-});
-
-LeLien5.addEventListener('click', function() {
-  window.open(Projets[5][5], '_self');
-});
-
-LeLien6.addEventListener('click', function() {
-  window.open(Projets[6][5], '_self');
-});

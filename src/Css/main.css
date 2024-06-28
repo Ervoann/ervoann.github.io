@@ -251,6 +251,30 @@
   }
 }
 
+.Projets3 {
+  /* Largeur 100% */
+  width: 100%;
+
+  /* Affichage en ligne */
+  display: flex;
+
+  /* Direction de la ligne : row */
+  flex-direction: column;
+
+  /* Marge supérieure */
+  margin-top: 10px;
+
+  /* Justifier le contenu de manière uniforme */
+  justify-content: space-evenly;
+
+  /* Gap entre les éléments */
+  gap: 10px;
+
+  /* Animation */
+  animation-name: reveal;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+}
 
 /* Section des projets 2 */
 
@@ -288,14 +312,14 @@
 
 /* Couleurs des divs des projets */
 
-#my-div0, #my-div, #my-div1, #my-div2, #my-div3, #my-div4, #my-div5, #my-div6, #Reco, #Reco2 {
+#my-div0, #my-div, #my-div1, #my-div2, #my-div3, #my-div4, #my-div5, #my-div6,#my-div7, #my-div8, #my-div9,#my-div10, #my-div11, #my-div12, #my-div13, #my-div14, #my-div15, #Reco, #Reco2 {
   background-color: var(--Tertiary);
   transition: 0.8s ease-in-out;
   opacity: 1;
   scale: 1;
 }
 
-#my-div0:hover, #my-div:hover, #my-div1:hover, #my-div2:hover, #my-div3:hover, #my-div4:hover, #my-div5:hover, #my-div6:hover, #Reco:hover, #Reco2:hover {
+#my-div0:hover, #my-div:hover, #my-div1:hover, #my-div2:hover, #my-div3:hover, #my-div4:hover, #my-div5:hover, #my-div6:hover,#my-div7:hover , #my-div8:hover , #my-div9:hover ,#my-div10:hover , #my-div11:hover , #my-div12:hover , #my-div13:hover , #my-div14:hover , #my-div15:hover , #Reco:hover, #Reco2:hover {
   scale: 0.99;
   /* Opacité */
   opacity: 0.5;
@@ -305,6 +329,44 @@
 
   /* Transition */
   transition: 0.5s ease-out;
+}
+
+.ShowMore {
+  /* Largeur */
+  width: 100%;
+
+  /* Affichage en ligne */
+  display: flex;
+
+  /* Direction de la ligne : row */
+  flex-direction: column;
+
+  /* Justifier le contenu de manière uniforme */
+  justify-content: center;
+
+  /* Alignement des éléments au centre */
+  align-items: center;
+
+  /* Marge supérieure */
+  margin-top: 10px;
+
+  /* Padding gauche et droit */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.ShowMore p {
+
+  /* Alignement du texte */
+  text-align: center;
+  
+  /* Couleur de Fond */
+  background-color: var(--Tertiary);
+
+  padding: 10px 20px 10px 20px;
+
+  /* Curseur */
+  cursor: pointer;
 }
 
 /* Classe Bigger */
@@ -766,11 +828,83 @@
   background-repeat: no-repeat;
 
    /* Position de l'image : centrée */
-   background-position: center;
+   background-position: left;
 
   /* Chemin de l'image */
   background-image: url(../Img/PluginAE/Preview.jpg);
 }
+
+.left25 {
+  /* Largeur */
+  width: 50%;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+   /* Position de l'image : centrée */
+   background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/EartsupAnimation/Preview.png);
+}
+
+.left26 {
+  /* Largeur */
+  width: 50%;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+   /* Position de l'image : centrée */
+   background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/Legavote/Preview.png);
+}
+
+
+
+.left27 {
+  /* Largeur */
+  width: 50%;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+   /* Position de l'image : centrée */
+   background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/Souchiol/Preview-gigapixel-high\ fidelity\ v2-2x.png);
+}
+
+
+.left28 {
+  /* Largeur */
+  width: 50%;
+
+  /* Taille de l'image : couverture */
+  background-size: cover;
+
+  /* Répétition de l'image : non */
+  background-repeat: no-repeat;
+
+   /* Position de l'image : centrée */
+   background-position: center;
+
+  /* Chemin de l'image */
+  background-image: url(../Img/NudgeCinéma/SiègesCinéAvecPoubelle.jpg);
+}
+
 
 
 
@@ -1254,6 +1388,25 @@
 /* Media query pour les écrans de moins de 1000px */
 
 @media (max-width: 1000px) {
+
+  .ShowMore {
+  
+    margin-top: 20px;
+  }
+
+  .ShowMore p {
+
+    font-size: 1.5rem;
+
+    /* Alignement du texte */
+    text-align: center;
+    
+    /* Couleur de Fond */
+    background-color: var(--Tertiary);
+  
+    padding: 10px 20px 10px 20px;
+  }
+
   .RevealText {
     margin: 0;
     text-align: left;
