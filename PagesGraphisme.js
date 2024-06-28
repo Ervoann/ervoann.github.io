@@ -9,7 +9,7 @@ var Projets = [
   ['./src/Img/Rodtchenko/Magazine.jpg','[Recherches sur alexandre rodtchenko]','ILLUSTRATOR / PHOTOSHOP / indesign','mar-2023','AlexandreRodtchenko','./src/Pages/AlexandreRodtchenko.html'],
   ['./src/Img/TMF/Miniature.jpg','[Identité des Transports Mazenod Florian]','Illustrator / Photoshop / Figma','mai-2023','TMF','./src/Pages/TMF.html'],
   ['../src/Img/Enfants/Preview.jpg','[Livret | design avec les enfants]','Illustrator / Photoshop / Indesign','nov-2023',' ','./src/Pages/Livret.html'],
-  ['./src/Img/NudgeCinéma/SaccageTonCinéCover.jpg','[Nudge dans les cinéma]','Photoshop / indesign / figma / Blender','Avril-2024','NudgeCinema','./src/Pages/NudgeCinema.html']
+  ['./src/Img/NudgeCinema/SaccageTonCinéCover.jpg','[Nudge dans les cinéma]','Photoshop / indesign / figma / Blender','Avril-2024','NudgeCinema','./src/Pages/NudgeCinema.html']
   //['./src/Img/MaisonSoustraire/MagazineMockup.jpg','[Analyse exposition maison soustraire]','ILLUSTRATOR / PHOTOSHOP / Indesign','avr-2023','MaisonSoustraire','./src/Pages/MaisonSoustraire.html'],
   //['./src/Img/EspaceTestEnArchipel/Cover.jpg','[Espace-test en archipel]','Photoshop / indesign / illustrator / figma','JAN-2023','EspaceTest','./src/Pages/EspaceTest.html']
 ];
